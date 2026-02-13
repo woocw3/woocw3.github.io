@@ -1,15 +1,15 @@
 ---
-title: Pandas
-date: 2023-10-26
-links:
-  - type: site
-    url: https://github.com/pandas-dev/pandas
+title: Cybersecurity Investment Efficiency
+date: 2024-01-01
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - Cybersecurity
+  - Information Security
+  - Investment Efficiency
+  - Corporate Governance
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+Research examining the efficiency and effectiveness of corporate cybersecurity investments, including disclosure practices and their impact on firm performance.
+
+This project investigates how firms allocate resources to cybersecurity, the relationship between cybersecurity investment and financial outcomes, and the role of information security disclosure in corporate transparency and risk management.
 
 <!--more-->

@@ -13,15 +13,15 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "Chungwon Woo"
     # Legal entity for copyright notices (defaults to name if not set)
-    organization: ""
+    organization: "Changwon National University"
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: ""
+    tagline: "Associate Professor of Accounting"
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox Kit. Easily create your personal academic website."
+    description: "Academic website of Dr. Chungwon Woo, Associate Professor of Accounting at Changwon National University. Research focuses on information security disclosure, cybersecurity investment, ESG, and innovation performance."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "LoreLabs_"              # Twitter/X handle for Twitter Cards (without @)
