@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/pandas/index.md",
+                "file": "content/slides/example/index.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "index"
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/projects/pandas/index.md",
+                "file": "content/slides/example/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/projects/pandas/index.md",
+                "file": "content/slides/example/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/projects/pandas/index.md",
+                "file": "content/slides/example/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,48 +184,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "8f992bd76d8362e5",
+  "active": "8c5999f8db83d13c",
   "lastOpenFiles": [
+    "public/css/_entry.f699e9a097688c838f47d650f3ad626d8baedc7167db75ce7a674e16a090669b.css",
+    "public/authors/youngwook-ko/index.xml",
+    "public/authors/yanghon-chung/index.xml",
+    "public/authors/-장필성/index.xml",
+    "public/authors/-이충현/index.xml",
+    "public/authors/-정기철/index.xml",
+    "public/css/_entry.197d046d92e0c12cdd3669815a470cab71a96d5f33cca896ff66ef08a9614987.css",
+    "public/css/_entry.bc48a2bbea3be366e490b76faa6c6bffdb0922dddd73abf5ccc81e95aa38cad2.css",
+    "public/authors/-엄태웅/index.xml",
+    "public/tags/ict/index.xml",
+    "public/tags/machine-learning/index.xml",
+    "node_modules/@pagefind/windows-x64/README.md",
+    "node_modules/preact/README.md",
+    "node_modules/@parcel/watcher/README.md",
+    "node_modules/pagefind/README.md",
+    "node_modules/postcss-selector-parser/CHANGELOG.md",
+    "node_modules/postcss-selector-parser/API.md",
+    "node_modules/source-map-js/README.md",
+    "node_modules/node-addon-api/README.md",
+    "node_modules/@tailwindcss/cli/README.md",
+    "node_modules/lightningcss/README.md",
+    "node_modules/@tailwindcss/node/README.md",
+    "node_modules/mri/readme.md",
+    "node_modules/is-extglob/README.md",
+    "node_modules/util-deprecate/History.md",
+    "node_modules/picocolors/README.md",
+    "node_modules/util-deprecate/README.md",
+    "public/media/authors/me_hu_c5bd6eb82c56a34d.webp",
+    "resources/_gen/images/media/authors/me_hu_c5bd6eb82c56a34d.webp",
+    "public/media/authors/me_hu_6d621f98f138c382.webp",
+    "resources/_gen/images/media/authors/me_hu_6d621f98f138c382.webp",
+    "public/media/authors/me_hu_57a6dec407225a49.webp",
+    "resources/_gen/images/media/authors/me_hu_57a6dec407225a49.webp",
+    "public/media/authors/me_hu_d9577011caf289c2.webp",
+    "resources/_gen/images/media/authors/me_hu_d9577011caf289c2.webp",
+    "public/media/authors/me_hu_dee48db2ea6d5208.png",
+    "resources/_gen/images/media/authors/me_hu_dee48db2ea6d5208.png",
+    "content/_index.md",
+    "content/experience.md",
     "content/authors/admin/_index.md",
-    "content/projects/pandas/featured.png",
+    "content/projects/pandas/index.md",
     "content/events/example/index.md",
-    "content/events/example/featured.jpg",
-    "content/blog/data-visualization/featured.jpg",
     "content/authors/_index.md",
-    "content/authors/admin/avatar.jpg.png",
     "content/publication/윤상필정책수단별/index.md",
     "content/publication/윤상필-2021-정책수단별/index.md",
-    "content/publication/우청원kaist/index.md",
-    "content/publication/황유나기/index.md",
-    "content/publication/황석원-2019-국가/index.md",
-    "content/publication/이인우-2013-중소/index.md",
-    "content/publication/이인우-2013-중소/cite.bib",
-    "content/publication/이인우-2013-중소",
-    "content/publication/최병삼-2016-연구개발서비스업/index.md",
-    "content/publication/최병삼-2016-연구개발서비스업/cite.bib",
-    "content/publication/최병삼-2016-연구개발서비스업",
-    "content/publication/우청원-2017-미국/index.md",
-    "content/publication/우청원-2017-미국/cite.bib",
-    "content/publication/우청원-2017-미국",
-    "content/publication/천동필-2020-csr/index.md",
-    "content/publication/천동필-2020-csr/cite.bib",
-    "content/publication/천동필-2020-csr",
-    "content/publication/천동필-2019-연구개발/cite.bib",
-    "content/publication/천동필-2019-연구개발/index.md",
-    "content/publication/천동필-2019-연구개발",
-    "content/publication/우청원-2025-정보기술투자가/index.md",
-    "content/publication/백서인-20202020/index.md",
-    "content/publication/전지은-2021-혁신역량/index.md",
-    "content/publication/황석원-2016-r/index.md",
-    "content/publication/윤수진-2021-organizational/index.md",
-    "content/publication/윤수진-2021-조직적/index.md",
-    "content/publication/신은정-2018-오픈사이언스를/index.md",
-    "content/publication/우청원-2020-블록체인/index.md",
-    "content/publication/최종화-2017-정부출연연구기관의/index.md",
-    "content/publication/우청원-2016-면역계를/index.md",
-    "content/publication/장훈-2018-최적/index.md",
-    "content/publication/손수정-2020-실증연구/index.md",
-    "content/publication/우청원-2021-스마트이동체/index.md",
-    "content/authors/admin/260126_웃는얼굴.png"
+    "content/publication/우청원kaist/index.md"
   ]
 }

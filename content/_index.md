@@ -1,111 +1,93 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ''
 summary: ''
 date: 2022-10-24
 type: landing
 
 design:
-  # Default section spacing
-  spacing: '6rem'
+  spacing: '3rem'
 
 sections:
   - block: resume-biography-3
+    id: about
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ''
-      # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
         url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
-      background:
-        gradient_mesh:
-          enable: true
-
-      # Name heading sizing to accommodate long or short names
-      name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        size: large
+        shape: circle
+      spacing:
+        padding: ['60px', '0', '40px', '0']
+
   - block: markdown
+    id: research
     content:
-      title: '📚 Research Focus'
-      subtitle: ''
+      title: 'Research'
       text: |-
-        My research investigates the intersection of technology, innovation, and corporate governance through an accounting lens. I focus on understanding how organizations manage and disclose information related to cybersecurity, environmental sustainability, and R&D performance.
+        My research investigates the intersection of **technology, innovation, and corporate governance** through an accounting and management lens.
 
-        Using empirical methods and quantitative analysis, I examine how firms' strategic decisions regarding innovation, ESG initiatives, and risk management impact financial and operational outcomes. My work has been published in leading journals including Technology Analysis & Strategic Management, Journal of Cleaner Production, and Business Strategy and the Environment.
+        **Key Research Areas:**
 
-        I welcome collaboration opportunities in areas related to technology management, innovation accounting, and corporate sustainability.
+        - **Information Security & Cybersecurity**: Examining corporate disclosure practices, investment efficiency, and the impact of cybersecurity on firm performance
+
+        - **ESG & Sustainability**: Analyzing how environmental, social, and governance initiatives affect corporate strategy and financial outcomes
+
+        - **Innovation & R&D Management**: Investigating R&D performance, technology commercialization, and innovation efficiency across industries
+
+        - **Technology Management**: Exploring the role of technology in organizational decision-making and performance management systems
+
+        I employ empirical methods and quantitative analysis to understand how firms' strategic decisions regarding innovation, ESG initiatives, and risk management impact financial and operational outcomes.
+
+        With **35 peer-reviewed publications** in leading journals including *Technology Analysis & Strategic Management*, *Journal of Cleaner Production*, and *Business Strategy and the Environment*, my research contributes to both academic knowledge and practical insights for organizations navigating digital transformation and sustainability challenges.
     design:
       columns: '1'
+      background:
+        color: '#f8f9fa'
+      spacing:
+        padding: ['60px', '0', '60px', '0']
+
   - block: collection
-    id: papers
+    id: publications
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
+      title: Selected Publications
+      subtitle: 'View complete list on [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)'
       text: ''
       filters:
         folders:
-          - publications
+          - publication
         exclude_featured: false
+      count: 15
+      sort_by: 'Date'
+      sort_ascending: false
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
+      columns: '1'
       spacing:
-        padding: [0, 0, 0, 0]
+        padding: ['60px', '0', '40px', '0']
+
+  - block: markdown
+    id: contact
+    content:
+      title: 'Contact'
+      text: |-
+        **Chungwon Woo, Ph.D.**
+        Associate Professor of Accounting
+        Department of Accounting
+        Changwon National University
+
+        **Office:** 21323, 20 Changwondaehak-ro, Uichang-gu, Changwon, Gyeongnam, 51140, Republic of Korea
+
+        **Email:** [woocw@changwon.ac.kr](mailto:woocw@changwon.ac.kr)
+
+        **Links:** [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID) | [GitHub](https://github.com/woocw3) | [CV](uploads/resume.pdf)
+    design:
+      columns: '1'
+      background:
+        color: white
+      spacing:
+        padding: ['60px', '0', '60px', '0']
 ---
