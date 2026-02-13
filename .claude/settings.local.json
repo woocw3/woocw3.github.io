@@ -9,7 +9,8 @@
       "Bash(gh workflow:*)",
       "Bash(hugo:*)",
       "Bash(npm install)",
-      "WebFetch(domain:yoongroup.github.io)"
+      "WebFetch(domain:yoongroup.github.io)",
+      "Bash(ls:*)"
     ]
   }
 }
