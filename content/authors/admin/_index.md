@@ -20,7 +20,7 @@ education:
     - course: Ph.D. in Business and Technology Management
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2016
-    - course: M.S. in Business Technology and Management (Major: Accounting)
+    - course: "M.S. in Business Technology and Management (Major: Accounting)"
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2013
     - course: B.E. in Mechanical Engineering
