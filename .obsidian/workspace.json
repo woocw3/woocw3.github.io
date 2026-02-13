@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/publication/윤상필정책수단별/index.md",
+                "file": "content/projects/pandas/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/publication/윤상필정책수단별/index.md",
+                "file": "content/projects/pandas/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/publication/윤상필정책수단별/index.md",
+                "file": "content/projects/pandas/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/publication/윤상필정책수단별/index.md",
+                "file": "content/projects/pandas/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -200,6 +200,13 @@
   },
   "active": "984f63e62d4ff1e6",
   "lastOpenFiles": [
+    "content/projects/pandas/featured.png",
+    "content/events/example/index.md",
+    "content/events/example/featured.jpg",
+    "content/blog/data-visualization/featured.jpg",
+    "content/authors/_index.md",
+    "content/authors/admin/avatar.jpg.png",
+    "content/publication/윤상필정책수단별/index.md",
     "content/publication/윤상필-2021-정책수단별/index.md",
     "content/publication/우청원kaist/index.md",
     "content/publication/황유나기/index.md",
@@ -229,14 +236,9 @@
     "content/publication/우청원-2020-블록체인/index.md",
     "content/publication/최종화-2017-정부출연연구기관의/index.md",
     "content/publication/우청원-2016-면역계를/index.md",
-    "content/publication/윤상필정책수단별/index.md",
     "content/publication/장훈-2018-최적/index.md",
     "content/publication/손수정-2020-실증연구/index.md",
     "content/publication/우청원-2021-스마트이동체/index.md",
-    "content/publication/우청원-2018-에너지/index.md",
-    "content/publication/최종화-2018-공공서비스의/index.md",
-    "content/publication/우청원-2017-일본/index.md",
-    "content/authors/admin/avatar.jpg.png",
     "content/authors/admin/260126_웃는얼굴.png"
   ]
 }
