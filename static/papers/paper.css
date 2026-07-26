@@ -1,0 +1,25 @@
+/* Shared style for research paper landing pages — woocw3.github.io/papers/ */
+body{font-family:Georgia,'Noto Serif KR',serif;max-width:760px;margin:0 auto;padding:2rem 1.2rem;line-height:1.65;color:#1a1a1a;background:#fff}
+nav.site{font-family:system-ui,sans-serif;font-size:.85rem;margin-bottom:1.6rem;color:#666}
+nav.site a{color:#2b6cb0;text-decoration:none}
+h1{font-size:1.6rem;line-height:1.35;margin:.4rem 0 1rem}
+h2{font-size:1.15rem;margin-top:2.2rem;border-bottom:1px solid #ddd;padding-bottom:.3rem}
+.meta{color:#555;font-size:.95rem}
+.tldr{background:#f4f6f8;border-left:4px solid #2b6cb0;padding:.9rem 1.1rem;margin:1.4rem 0}
+.finding{margin:.9rem 0}
+.finding b{color:#2b6cb0}
+.cite{background:#fafafa;border:1px solid #e2e2e2;padding:.9rem 1.1rem;font-size:.9rem;overflow-x:auto}
+.kr{color:#333}
+footer{margin-top:3rem;font-size:.9rem;color:#555;border-top:1px solid #ddd;padding-top:1rem}
+a{color:#2b6cb0}
+ul{padding-left:1.2rem}
+@media (prefers-color-scheme: dark){
+  body{background:#111;color:#e8e8e8}
+  .tldr{background:#1a2230;border-left-color:#63a3e0}
+  .cite{background:#181818;border-color:#333}
+  .kr{color:#ccc}
+  .finding b{color:#63a3e0}
+  a,nav.site a{color:#63a3e0}
+  footer,.meta,nav.site{color:#999}
+  h2{border-bottom-color:#333}
+}

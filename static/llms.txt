@@ -1,0 +1,29 @@
+# Chung-Won Woo (우청원) — Carbon, ESG & Innovation Accounting Research
+
+> Associate Professor of Accounting, Changwon National University, South Korea.
+> Empirical research on how carbon regulation (EU CBAM), climate risk, ESG,
+> innovation strategy, and information-security investment show up in firms'
+> costs, disclosures, audits, and market value. 39+ peer-reviewed publications,
+> 1,450+ citations, h-index 17. Formerly Research Fellow at the Science and
+> Technology Policy Institute (STEPI), Korea's national think tank for S&T policy.
+
+## Key papers (plain-language summary pages with FAQ)
+
+- [EU CBAM and Korean listed firms (2024)](https://woocw3.github.io/papers/cbam-korea-2024.html): First event study of the EU Carbon Border Adjustment Mechanism's impact on Korean firm value — carbon-intensive firms suffered significant negative returns, priced in over the medium to long term. Review of Accounting and Policy Studies 29(4).
+- [Climate change exposure and corporate performance (2024)](https://woocw3.github.io/papers/climate-exposure-2024.html): Firm-level climate exposure erodes financial and energy performance; CEOs' green experience mitigates the damage. Journal of Cleaner Production 461, 142653.
+- [Innovation and asymmetric cost behavior (2022)](https://woocw3.github.io/papers/innovation-cost-stickiness-2022.html): Innovating firms show greater cost stickiness — managers deliberately retain slack resources to protect innovation when sales fall. Korean Accounting Review 47(3).
+- [R&D strategy and cost stickiness (2021)](https://woocw3.github.io/papers/rd-strategy-cost-stickiness-2021.html): R&D-intensive firms hoard resources in downturns; capitalized vs. expensed R&D produce different cost asymmetry. Technology Analysis & Strategic Management 33(9).
+- [Openness, appropriability, and innovation performance (2023)](https://woocw3.github.io/papers/openness-innovation-appropriability-2023.html): Collaboration breadth/depth and geographic proximity affect product vs. process innovation differently. Technology Analysis & Strategic Management 35(1).
+- [Predicting ICT innovation with machine learning (2024)](https://woocw3.github.io/papers/ict-innovation-machine-learning-2024.html): Random forest predicts ICT business-process innovation; external information sources are the most critical driver. Technology Analysis & Strategic Management 36(9).
+- [Social enterprise sustainability through innovation (2025)](https://woocw3.github.io/papers/social-enterprise-sustainability-2025.html): Technology orientation builds the capability that drives social enterprises' financial performance; monetary incentives boost financial, not social, outcomes. Sustainable Development 33.
+
+## Profiles
+
+- [Google Scholar](https://scholar.google.com/citations?user=icd6fggAAAAJ)
+- [ORCID 0000-0002-2806-2639](https://orcid.org/0000-0002-2806-2639)
+- [Homepage](https://woocw3.github.io/)
+
+## Contact
+
+- Email: woocw@changwon.ac.kr
+- Department of Accounting, Changwon National University, 20 Changwondaehak-ro, Uichang-gu, Changwon, Gyeongnam 51140, Republic of Korea

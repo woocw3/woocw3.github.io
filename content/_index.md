@@ -49,7 +49,23 @@ sections:
 
         ---
 
-        With **35+ peer-reviewed publications** in leading journals including *Technology Analysis & Strategic Management*, *Journal of Cleaner Production*, and *Business Strategy and the Environment*, my research bridges academic rigor with practical insights for organizations and policymakers.
+        With **39+ peer-reviewed publications** in leading journals including *Technology Analysis & Strategic Management*, *Journal of Cleaner Production*, *Sustainable Development*, and *Korean Accounting Review*, my research bridges academic rigor with practical insights for organizations and policymakers.
+
+        ---
+
+        ### 📄 Plain-language paper summaries
+
+        Selected papers with key findings, FAQs, and citation formats:
+
+        - [Does the EU CBAM affect Korean firms' stock prices?](/papers/cbam-korea-2024.html) — *Review of Accounting and Policy Studies*, 2024
+        - [Does climate change exposure hurt corporate performance?](/papers/climate-exposure-2024.html) — *Journal of Cleaner Production*, 2024
+        - [Do innovating firms have stickier costs?](/papers/innovation-cost-stickiness-2022.html) — *Korean Accounting Review*, 2022
+        - [Does R&D investment make costs sticky?](/papers/rd-strategy-cost-stickiness-2021.html) — *Technology Analysis & Strategic Management*, 2021
+        - [Does openness enable or hinder innovation performance?](/papers/openness-innovation-appropriability-2023.html) — *Technology Analysis & Strategic Management*, 2023
+        - [Can machine learning predict ICT business-process innovation?](/papers/ict-innovation-machine-learning-2024.html) — *Technology Analysis & Strategic Management*, 2024
+        - [Can social enterprises be sustainable through innovation and incentives?](/papers/social-enterprise-sustainability-2025.html) — *Sustainable Development*, 2025
+
+        [→ All paper summaries](/papers/)
     design:
       columns: '1'
       background:
@@ -79,7 +95,7 @@ sections:
     id: publications
     content:
       title: Recent Publications
-      subtitle: '[View complete list on Google Scholar →](https://scholar.google.com/citations?user=YOUR_ID)'
+      subtitle: '[View complete list on Google Scholar →](https://scholar.google.com/citations?user=icd6fggAAAAJ)'
       text: ''
       filters:
         folders:
@@ -118,7 +134,7 @@ sections:
         ✉️ **Email:** [woocw@changwon.ac.kr](mailto:woocw@changwon.ac.kr)
 
         🔗 **Links:**
-        [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID) • [GitHub](https://github.com/woocw3) • [Download CV](uploads/resume.pdf)
+        [Google Scholar](https://scholar.google.com/citations?user=icd6fggAAAAJ) • [GitHub](https://github.com/woocw3) • [Download CV](uploads/resume.pdf)
     design:
       columns: '1'
       background:

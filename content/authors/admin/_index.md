@@ -32,7 +32,10 @@ social:
     link: mailto:woocw@changwon.ac.kr
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=YOUR_ID
+    link: https://scholar.google.com/citations?user=icd6fggAAAAJ
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-2806-2639
   - icon: github
     icon_pack: fab
     link: https://github.com/woocw3
@@ -54,7 +57,7 @@ Before joining Changwon National University in 2024, I served as Assistant Profe
 
 ## Research Impact
 
-With 35+ peer-reviewed publications in leading international journals including *Technology Analysis & Strategic Management*, *Journal of Cleaner Production*, and *Business Strategy and the Environment*, my research contributes to understanding:
+With 39+ peer-reviewed publications (1,450+ citations, h-index 17) in leading international journals including *Technology Analysis & Strategic Management*, *Journal of Cleaner Production*, *Sustainable Development*, and *Korean Accounting Review*, my research contributes to understanding:
 
 - How firms invest in and disclose cybersecurity initiatives
 - The relationship between ESG performance and corporate innovation
