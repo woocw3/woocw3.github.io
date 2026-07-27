@@ -64,6 +64,10 @@ sections:
         - [Does openness enable or hinder innovation performance?](/papers/openness-innovation-appropriability-2023.html) — *Technology Analysis & Strategic Management*, 2023
         - [Can machine learning predict ICT business-process innovation?](/papers/ict-innovation-machine-learning-2024.html) — *Technology Analysis & Strategic Management*, 2024
         - [Can social enterprises be sustainable through innovation and incentives?](/papers/social-enterprise-sustainability-2025.html) — *Sustainable Development*, 2025
+        - [Does carbon risk increase audit hours and audit fees?](/papers/carbon-risk-audit-fees-2023.html) — *국제회계연구*, 2023
+        - [Do cost-squeezed suppliers give up on green?](/papers/supplier-cogs-environmental-2024.html) — *회계와정책연구*, 2024
+        - [How much IT investment is too much?](/papers/it-security-investment-firm-value-2026.html) — *회계와정책연구*, 2026
+        - [Does IT investment improve cost efficiency?](/papers/it-investment-cost-efficiency-2025.html) — *경영교육연구*, 2025
 
         [→ All paper summaries](/papers/)
     design:
