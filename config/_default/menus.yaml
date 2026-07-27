@@ -7,12 +7,24 @@ main:
   - name: Research
     url: /#research
     weight: 20
-  - name: Publications
-    url: /#publications
+  - name: Career
+    url: /#education
     weight: 30
+  - name: Projects
+    url: /#projects
+    weight: 40
+  - name: Services
+    url: /#services
+    weight: 50
+  - name: Papers
+    url: /papers/
+    weight: 60
+  - name: Media
+    url: /#media
+    weight: 70
   - name: Contact
     url: /#contact
-    weight: 40
+    weight: 80
   - name: CV
     url: uploads/resume.pdf
-    weight: 50
+    weight: 90
