@@ -1,0 +1,35 @@
+<!-- Left-aligned, list-style academic layout (reference: KAIST ETP LAB PI page) -->
+<style>
+/* Section content: left-align instead of the theme's centered column, and widen it */
+main .flex.flex-col.items-center.max-w-prose {
+  align-items: flex-start;
+  max-width: 60rem;
+}
+main .prose.max-w-prose {
+  max-width: 100%;
+}
+/* Normal reading size rather than the theme's oversized prose */
+@media (min-width: 1024px) {
+  main .prose.lg\:prose-xl {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
+  main .prose.lg\:prose-xl p { margin-top: .5em; margin-bottom: .5em; }
+}
+/* Section titles: slightly tighter, left-aligned */
+main .text-3xl.font-bold {
+  font-size: 1.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: .4rem;
+  width: 100%;
+}
+.dark main .text-3xl.font-bold { border-bottom-color: #374151; }
+/* Bullet lines ("· item") read as a tight list */
+main .prose p { margin-top: .35em; margin-bottom: .35em; }
+main .prose h3 {
+  font-size: 1.1rem;
+  margin-top: 1.6em;
+  margin-bottom: .5em;
+}
+</style>

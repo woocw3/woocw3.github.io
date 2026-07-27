@@ -19,7 +19,7 @@ education:
     - course: Ph.D. in Business and Technology Management
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2016
-    - course: "M.S. in Business Technology and Management (Major: Accounting)"
+    - course: M.S. in Management Science
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2013
     - course: B.E. in Mechanical Engineering
@@ -53,7 +53,7 @@ I am an Associate Professor in the Department of Accounting at Changwon National
 
 ## Background
 
-Before joining Changwon National University in 2024, I served as Assistant Professor at Kyungnam University (2022-2024) and as a Research Fellow at the Science and Technology Policy Institute (STEPI, 2016-2022), where I led R&D planning and policy research initiatives.
+Before joining Changwon National University in November 2024, I served as Assistant Professor at Kyungnam University (2022-2024), as Adjunct Professor at Pukyong National University's Graduate School of Management of Technology (2020-2022), and as a Research Fellow at the Science and Technology Policy Institute (STEPI, 2016-2022), where I led national R&D and science-and-technology policy research for ministries and public agencies.
 
 ## Research Impact
 

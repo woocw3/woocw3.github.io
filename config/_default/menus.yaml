@@ -8,7 +8,7 @@ main:
     url: /#research
     weight: 20
   - name: Career
-    url: /#education
+    url: /#career
     weight: 30
   - name: Projects
     url: /#projects
@@ -16,15 +16,18 @@ main:
   - name: Services
     url: /#services
     weight: 50
+  - name: Awards
+    url: /#awards
+    weight: 60
   - name: Papers
     url: /papers/
-    weight: 60
+    weight: 70
   - name: Media
     url: /#media
-    weight: 70
+    weight: 80
   - name: Contact
     url: /#contact
-    weight: 80
+    weight: 90
   - name: CV
     url: uploads/resume.pdf
-    weight: 90
+    weight: 100
