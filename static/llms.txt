@@ -3,23 +3,75 @@
 > Associate Professor of Accounting, Changwon National University, South Korea.
 > Empirical research on how carbon regulation (EU CBAM), climate risk, ESG,
 > innovation strategy, and information-security investment show up in firms'
-> costs, disclosures, audits, and market value. 39+ peer-reviewed publications,
+> costs, disclosures, audits, and market value. 42 published papers,
 > 1,450+ citations, h-index 17. Formerly Research Fellow at the Science and
 > Technology Policy Institute (STEPI), Korea's national think tank for S&T policy.
 
-## Key papers (plain-language summary pages with FAQ)
+## Papers
 
-- [EU CBAM and Korean listed firms (2024)](https://woocw3.github.io/papers/cbam-korea-2024.html): First event study of the EU Carbon Border Adjustment Mechanism's impact on Korean firm value — carbon-intensive firms suffered significant negative returns, priced in over the medium to long term. Review of Accounting and Policy Studies 29(4).
-- [Climate change exposure and corporate performance (2024)](https://woocw3.github.io/papers/climate-exposure-2024.html): Firm-level climate exposure erodes financial and energy performance; CEOs' green experience mitigates the damage. Journal of Cleaner Production 461, 142653.
-- [Innovation and asymmetric cost behavior (2022)](https://woocw3.github.io/papers/innovation-cost-stickiness-2022.html): Innovating firms show greater cost stickiness — managers deliberately retain slack resources to protect innovation when sales fall. Korean Accounting Review 47(3).
-- [R&D strategy and cost stickiness (2021)](https://woocw3.github.io/papers/rd-strategy-cost-stickiness-2021.html): R&D-intensive firms hoard resources in downturns; capitalized vs. expensed R&D produce different cost asymmetry. Technology Analysis & Strategic Management 33(9).
-- [Openness, appropriability, and innovation performance (2023)](https://woocw3.github.io/papers/openness-innovation-appropriability-2023.html): Collaboration breadth/depth and geographic proximity affect product vs. process innovation differently. Technology Analysis & Strategic Management 35(1).
-- [Predicting ICT innovation with machine learning (2024)](https://woocw3.github.io/papers/ict-innovation-machine-learning-2024.html): Random forest predicts ICT business-process innovation; external information sources are the most critical driver. Technology Analysis & Strategic Management 36(9).
-- [Social enterprise sustainability through innovation (2025)](https://woocw3.github.io/papers/social-enterprise-sustainability-2025.html): Technology orientation builds the capability that drives social enterprises' financial performance; monetary incentives boost financial, not social, outcomes. Sustainable Development 33.
-- [Carbon risk, audit hours and audit fees (2023)](https://woocw3.github.io/papers/carbon-risk-audit-fees-2023.html): Korean firms with higher carbon intensity receive significantly more audit hours, but carbon risk is not priced into audit fees. Korea International Accounting Review 110, 181-215.
-- [Suppliers' COGS ratio and environmental activities (2024)](https://woocw3.github.io/papers/supplier-cogs-environmental-2024.html): A 10 percentage point higher cost-of-goods-sold ratio cuts a supplier's likelihood of environmental activity by about 24.6% — but business-group affiliation reverses the relationship. Review of Accounting and Policy Studies 29(4), 215-234.
-- [IT and information security investment and firm value (2026)](https://woocw3.github.io/papers/it-security-investment-firm-value-2026.html): Inverted-U between IT investment and firm value with a turning point near 11.66% of total assets; dedicated CISO and CPO roles mitigate over-investment inefficiency. Review of Accounting and Policy Studies 31(2), 123-149.
-- [IT investment and cost efficiency (2025)](https://woocw3.github.io/papers/it-investment-cost-efficiency-2025.html): DEA evidence that information-security-disclosing firms are more cost efficient and that IT investment plus dedicated IT personnel raise technical efficiency. Korean Business Education Review 40(2), 129-149.
+Every published paper has a summary page carrying its abstract, full
+bibliographic data, and citation formats.
+
+
+### Carbon, climate & environment
+
+- [Does the EU Carbon Border Adjustment Mechanism (CBAM) Affect Korean Firms' Stock Prices?](https://woocw3.github.io/papers/cbam-korea-2024.html): Review of Accounting and Policy Studies, 2024.
+- [Does Climate Change Exposure Hurt Corporate Financial and Energy Performance?](https://woocw3.github.io/papers/climate-exposure-2024.html): Journal of Cleaner Production, 2024.
+- [Do Cost-Squeezed Suppliers Give Up on Green?](https://woocw3.github.io/papers/supplier-cogs-environmental-2024.html): Review of Accounting and Policy Studies, 2024.
+- [Does Carbon Risk Increase Audit Hours and Audit Fees?](https://woocw3.github.io/papers/carbon-risk-audit-fees-2023.html): Korea International Accounting Review, 2023.
+- [Suppliers' communication capability and external green integration for green and financial performance in Korean construction industry](https://woocw3.github.io/papers/supplier-communication-green-integration-2016.html): Journal of Cleaner Production, 2016.
+- [Environmental Capabilities of Suppliers for Green Supply Chain Management in Construction Projects: A Case Study in Korea](https://woocw3.github.io/papers/supplier-environmental-capabilities-gscm-2016.html): Sustainability, 2016.
+- [The static and dynamic environmental efficiency of renewable energy: A Malmquist index analysis of OECD countries](https://woocw3.github.io/papers/renewable-energy-environmental-efficiency-2015.html): Renewable and Sustainable Energy Reviews, 2015.
+- [Impact of Green Innovation on Labor Productivity and its Determinants: an Analysis of the Korean Manufacturing Industry](https://woocw3.github.io/papers/green-innovation-labor-productivity-2014.html): Business Strategy and the Environment, 2014.
+- [Exploring the Impact of Complementary Assets on the Environmental Performance in Manufacturing SMEs](https://woocw3.github.io/papers/complementary-assets-environmental-performance-2014.html): Sustainability, 2014.
+
+### Innovation, R&D & cost behavior
+
+- [성과보상차등이 기업 혁신성과에 미치는 영향: 혁신 프로세스 단계별 분석](https://woocw3.github.io/papers/performance-pay-differentiation-innovation-2026.html): 혁신기업연구, 2026.
+- [Can Machine Learning Predict ICT Business-Process Innovation?](https://woocw3.github.io/papers/ict-innovation-machine-learning-2024.html): Technology Analysis & Strategic Management, 2024.
+- [Do external risk factors increase or decrease country-level R&D efficiency: focused on air pollution and job insecurity?](https://woocw3.github.io/papers/external-risk-country-rd-efficiency-2024.html): Technology Analysis & Strategic Management, 2024.
+- [Does Openness Enable or Hinder Innovation Performance?](https://woocw3.github.io/papers/openness-innovation-appropriability-2023.html): Technology Analysis & Strategic Management, 2023.
+- [Do Innovating Firms Have Stickier Costs?](https://woocw3.github.io/papers/innovation-cost-stickiness-2022.html): Korean Accounting Review, 2022.
+- [기계학습을 활용한 혁신성과 예측 및 변수 중요도 분석](https://woocw3.github.io/papers/machine-learning-innovation-prediction-2022.html): 경영교육연구, 2022.
+- [Does R&D Investment Make Costs Sticky?](https://woocw3.github.io/papers/rd-strategy-cost-stickiness-2021.html): Technology Analysis & Strategic Management, 2021.
+- [Do gender equality and work–life balance matter for innovation performance?](https://woocw3.github.io/papers/gender-equality-worklife-innovation-2021.html): Technology Analysis & Strategic Management, 2021.
+- [스마트이동체 기업의 원가효율성 분석: 자율주행차, 드론 기업을 중심으로](https://woocw3.github.io/papers/smart-mobility-cost-efficiency-2021.html): 경영교육연구, 2021.
+- [How deregulation moderates the effect of public R&D support?](https://woocw3.github.io/papers/deregulation-public-rd-support-2020.html): Technology Analysis & Strategic Management, 2020.
+- [SME’s Appropriability regime for Sustainable Development-the Role of Absorptive Capacity and Inventive Capacity](https://woocw3.github.io/papers/sme-appropriability-capacity-2016.html): Sustainability, 2016.
+- [원가관리가 기업내부 연구개발 효율성에 미치는 영향](https://woocw3.github.io/papers/cost-management-rd-efficiency-2016.html): 관리회계연구, 2016.
+- [Value capture mechanism: R & D productivity comparison of SMEs](https://woocw3.github.io/papers/value-capture-rd-productivity-2015.html): Management Decision, 2015.
+- [Labor Union Effects on Innovation and Commercialization Productivity: An Integrated Propensity Score Matching and Two-Stage Data Envelopment Analysis](https://woocw3.github.io/papers/labor-union-innovation-productivity-2015.html): Sustainability, 2015.
+
+### Energy & environmental policy
+
+- [R&D performance and relevant factors of renewable energy projects: separating innovation and economic perspectives](https://woocw3.github.io/papers/renewable-energy-rd-performance-2023.html): International Journal of Environmental Science and Technology, 2023.
+- [DEA를 이용한 청정에너지기술 R&D 효율성 분석 : 신재생에너지기술 R&D과제를 대상으로](https://woocw3.github.io/papers/clean-energy-rd-efficiency-dea-2019.html): 기술혁신학회지, 2019.
+- [Influencing factors on hydrogen energy R&D projects: An ex-post performance evaluation](https://woocw3.github.io/papers/hydrogen-rd-expost-evaluation-2016.html): Renewable and Sustainable Energy Reviews, 2016.
+- [Scenario analysis for estimating the learning rate of photovoltaic power generation based on learning curve theory in South Korea](https://woocw3.github.io/papers/photovoltaic-learning-curve-2015.html): Energy, 2015.
+- [The role of hydrogen energy development in the Korean economy: An input–output analysis](https://woocw3.github.io/papers/hydrogen-economy-input-output-2014.html): International Journal of Hydrogen Energy, 2014.
+
+### Science & technology policy evaluation
+
+- [정책수단별 기업 성과 비교 연구 ：R&D 효율성을 중심으로](https://woocw3.github.io/papers/policy-instruments-rd-efficiency-2021.html): 회계와정책연구, 2021.
+- [연구개발 수행기관 및 협력유형이 소재부품 R&D 효율성에 미치는 영향](https://woocw3.github.io/papers/materials-components-rd-cooperation-2019.html): 기술혁신연구, 2019.
+- [과학기술정책조합이 R&D효율성에 미치는 영향 분석](https://woocw3.github.io/papers/policy-mix-rd-efficiency-2018.html): 기술혁신학회지, 2018.
+- [국가 출연연구소의 협업적 융합연구 성과 분석](https://woocw3.github.io/papers/government-institute-convergence-research-2017.html): 기술혁신학회지, 2017.
+- [대덕연구개발특구의 지원사업 성과분석:성향점수매칭(PSM) 방법을 중심으로](https://woocw3.github.io/papers/daedeok-innopolis-psm-2016.html): 경영교육연구, 2016.
+
+### IT, information security & digital
+
+- [How Much IT Investment Is Too Much?](https://woocw3.github.io/papers/it-security-investment-firm-value-2026.html): Review of Accounting and Policy Studies, 2026.
+- [Does IT Investment Improve Cost Efficiency?](https://woocw3.github.io/papers/it-investment-cost-efficiency-2025.html): Korean Business Education Review, 2025.
+- [Exploring the Determinants of Blockchain Acceptance for Research Data Management](https://woocw3.github.io/papers/blockchain-research-data-management-2023.html): Journal of Computer Information Systems, 2023.
+
+### ESG, CSR & social enterprise
+
+- [Is ESG balance beneficial for the relationship between innovation and corporate financial performance?](https://woocw3.github.io/papers/esg-balance-innovation-performance-2025.html): 혁신기업연구, 2025.
+- [Can Social Enterprises Be Sustainable Through Innovation and Social Performance-Based Incentives?](https://woocw3.github.io/papers/social-enterprise-sustainability-2025.html): Sustainable Development, 2025.
+- [유상증자의 공시효과와 영업재무레버리지의 관계에 관한 실증연구](https://woocw3.github.io/papers/seasoned-equity-offering-leverage-2022.html): 회계와정책연구, 2022.
+- [How Do Organizational Factors Influence Performance through Performance Management System as Innovation?](https://woocw3.github.io/papers/organizational-factors-performance-management-2021.html): Review of Accounting and Policy Studies, 2021.
+- [CSR 활동이 벤처기업의 경영성과에 미치는 영향: 기업의 성장단계를 구분하여](https://woocw3.github.io/papers/csr-venture-firm-performance-2020.html): 벤처창업연구, 2020.
+- [CSR, social ties and firm performance](https://woocw3.github.io/papers/csr-social-ties-firm-performance-2019.html): Corporate Governance: The International Journal of Business in Society, 2019.
 
 ## Profiles
 

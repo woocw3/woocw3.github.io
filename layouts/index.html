@@ -10,7 +10,7 @@
 <meta property="og:title" content="Chung-Won Woo (우청원) — Carbon, ESG & Innovation Accounting">
 <meta property="og:description" content="Associate Professor of Accounting, Changwon National University. 39+ publications, 1,450+ citations, h-index 17.">
 <meta property="og:url" content="https://woocw3.github.io/">
-<meta property="og:image" content="https://woocw3.github.io/img/profile.png">
+<meta property="og:image" content="https://woocw3.github.io/img/profile.jpg">
 
 <script type="application/ld+json">
 {
@@ -32,7 +32,7 @@
     {"@type": "CollegeOrUniversity", "name": "Pusan National University"}
   ],
   "email": "mailto:woocw@changwon.ac.kr",
-  "image": "https://woocw3.github.io/img/profile.png",
+  "image": "https://woocw3.github.io/img/profile.jpg",
   "identifier": {"@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-2806-2639"},
   "knowsAbout": ["carbon accounting", "EU Carbon Border Adjustment Mechanism (CBAM)", "climate risk", "ESG", "cost stickiness", "asymmetric cost behavior", "R&D efficiency", "innovation strategy", "information security disclosure", "audit fees"],
   "url": "https://woocw3.github.io/",
@@ -110,9 +110,10 @@
     padding:38px 36px; margin:22px 0;
     display:flex; gap:32px; align-items:flex-start; flex-wrap:wrap;
   }
+  /* ID-style portrait photo (3:4) — rectangle, not circle, so the face is not cropped */
   header.hero img{
-    width:132px; height:132px; border-radius:50%; object-fit:cover; flex:none;
-    border:1px solid var(--line);
+    width:112px; height:149px; border-radius:8px; object-fit:cover; object-position:center top;
+    flex:none; border:1px solid var(--line); background:#fff;
   }
   header.hero .who{flex:1 1 380px; min-width:0}
   header.hero .greet{font-size:15px; color:var(--muted); margin:0 0 4px}
@@ -136,7 +137,7 @@
     section, header.hero{padding:24px 20px; border-radius:8px}
     section > h2{font-size:22px}
     header.hero h1{font-size:25px}
-    header.hero img{width:104px; height:104px}
+    header.hero img{width:92px; height:122px}
     main{padding:0 14px 60px}
     nav.top .inner{padding:0 14px; gap:16px}
   }
@@ -163,7 +164,7 @@
 <main>
 
   <header class="hero" id="about">
-    <img src="/img/profile.png" alt="Chung-Won Woo">
+    <img src="/img/profile.jpg" alt="Chung-Won Woo">
     <div class="who">
       <p class="greet">Greetings!</p>
       <h1>Chung-Won Woo <span style="font-size:.62em;font-weight:600;color:var(--muted)">우청원</span></h1>
@@ -287,7 +288,7 @@
 
   <section id="papers">
     <h2>Papers</h2>
-    <p class="note" style="margin-top:0">Plain-language summaries — each with key findings, FAQ, and citation formats.</p>
+    <p class="note" style="margin-top:0">Selected papers below; <a href="/papers/">summary pages exist for all 42 published papers</a>, each with the abstract, bibliographic data, and citation formats.</p>
 
     <h3>Carbon &amp; climate accounting</h3>
     <ul class="dot">
