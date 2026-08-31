@@ -50,122 +50,364 @@
 
 <style>
   :root{
-    --bg:#f8f9fa;
+    --bg:#f6f7f9;
+    --wash:radial-gradient(1100px 520px at 50% -240px, #e7edf9 0%, rgba(231,237,249,0) 70%);
     --card:#ffffff;
-    --ink:#1a1a1a;
+    --ink:#14181f;
+    --ink-soft:#39424f;
     --muted:#6b7280;
-    --line:#e5e7eb;
+    --line:#e6e8ec;
+    --hair:#f0f2f5;
+    --rail:#d3d8e0;
     --accent:#1d4ed8;
-    --maxw:920px;
+    --accent-weak:#eef2ff;
+    --chip:#ffffff;
+    --nav:rgba(255,255,255,.85);
+    --shadow:0 1px 2px rgba(16,24,40,.04), 0 10px 26px -14px rgba(16,24,40,.14);
+    --shadow-lift:0 1px 2px rgba(16,24,40,.05), 0 16px 36px -16px rgba(16,24,40,.22);
+    --maxw:940px;
+    --radius:14px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0e1116;
+      --wash:radial-gradient(1100px 520px at 50% -240px, rgba(24,33,50,.55) 0%, rgba(24,33,50,0) 70%);
+      --card:#151a21;
+      --ink:#e9ebef;
+      --ink-soft:#c2c9d3;
+      --muted:#97a0ad;
+      --line:#252c36;
+      --hair:#1d232b;
+      --rail:#39434f;
+      --accent:#82a4ff;
+      --accent-weak:#1a2540;
+      --chip:#1b212a;
+      --nav:rgba(14,17,22,.86);
+      --shadow:0 1px 2px rgba(0,0,0,.34), 0 10px 26px -14px rgba(0,0,0,.6);
+      --shadow-lift:0 1px 2px rgba(0,0,0,.4), 0 16px 36px -16px rgba(0,0,0,.75);
+    }
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth; scroll-padding-top:74px}
+  [hidden]{display:none !important}
+  html{scroll-behavior:smooth; scroll-padding-top:78px; -webkit-text-size-adjust:100%}
   body{
-    margin:0; background:var(--bg); color:var(--ink);
+    margin:0; background:var(--bg); background-image:var(--wash);
+    background-repeat:no-repeat; color:var(--ink);
     font-family:"Pretendard","Poppins",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
     font-size:16px; line-height:1.75;
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
   }
   a{color:var(--accent); text-decoration:none}
   a:hover{text-decoration:underline}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:4px}
+  strong{color:var(--ink)}
 
   /* ---------- nav ---------- */
   nav.top{
     position:sticky; top:0; z-index:50;
-    background:rgba(255,255,255,.92); backdrop-filter:saturate(180%) blur(8px);
+    background:var(--nav); backdrop-filter:saturate(180%) blur(10px);
+    -webkit-backdrop-filter:saturate(180%) blur(10px);
     border-bottom:1px solid var(--line);
   }
   nav.top .inner{
     max-width:var(--maxw); margin:0 auto; padding:0 24px;
-    display:flex; align-items:center; gap:22px; height:56px;
-    overflow-x:auto; scrollbar-width:none;
+    display:flex; align-items:center; gap:14px; height:58px;
   }
-  nav.top .inner::-webkit-scrollbar{display:none}
-  nav.top .brand{font-weight:700; font-size:15px; color:var(--ink); white-space:nowrap; margin-right:6px}
-  nav.top a.item{font-size:14.5px; color:#818181; white-space:nowrap}
+  nav.top .brand{
+    font-weight:700; font-size:15px; color:var(--ink); white-space:nowrap;
+    letter-spacing:-.01em; flex:none;
+  }
+  nav.top .brand:hover{text-decoration:none; color:var(--accent)}
+  nav.top .scroller{
+    display:flex; align-items:center; gap:16px; min-width:0; flex:1 1 auto;
+    overflow-x:auto; scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 22px),transparent 100%);
+    mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 22px),transparent 100%);
+  }
+  nav.top .scroller::-webkit-scrollbar{display:none}
+  nav.top a.item{
+    position:relative; font-size:14px; color:var(--muted); white-space:nowrap;
+    padding:6px 0; transition:color .16s ease;
+  }
+  nav.top a.item::after{
+    content:""; position:absolute; left:0; right:0; bottom:-1px; height:2px;
+    background:var(--accent); border-radius:2px; transform:scaleX(0);
+    transition:transform .18s ease;
+  }
   nav.top a.item:hover{color:var(--ink); text-decoration:none}
+  nav.top a.item.active{color:var(--ink); font-weight:600}
+  nav.top a.item.active::after{transform:scaleX(1)}
+  nav.top .lang{display:flex; align-items:center; gap:4px; font-size:13px; white-space:nowrap; flex:none}
+  nav.top .lang a{color:var(--muted); padding:3px 8px; border-radius:6px}
+  nav.top .lang a:hover{color:var(--ink); background:var(--hair); text-decoration:none}
+  nav.top .lang .cur{color:var(--ink); font-weight:700; background:var(--hair); padding:3px 8px; border-radius:6px}
 
   /* ---------- layout ---------- */
-  main{max-width:var(--maxw); margin:0 auto; padding:0 24px 80px}
+  main{max-width:var(--maxw); margin:0 auto; padding:0 24px 88px}
   section{
-    background:var(--card); border:1px solid var(--line); border-radius:10px;
-    padding:32px 36px; margin:22px 0;
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:34px 38px; margin:20px 0; box-shadow:var(--shadow);
+    transition:box-shadow .2s ease;
   }
+  section:hover{box-shadow:var(--shadow-lift)}
   section > h2{
-    margin:0 0 20px; font-size:26px; font-weight:700; letter-spacing:-.01em;
+    margin:0 0 22px; font-size:25px; font-weight:700; letter-spacing:-.02em;
+    display:flex; align-items:center; gap:11px;
   }
-  h3{font-size:15px; font-weight:700; color:var(--muted); margin:26px 0 10px;
-     text-transform:uppercase; letter-spacing:.04em}
-  h3:first-of-type{margin-top:4px}
+  section > h2::before{
+    content:""; width:4px; height:20px; border-radius:3px; flex:none;
+    background:var(--accent);
+  }
+  h3{
+    font-size:12.5px; font-weight:700; color:var(--muted); margin:30px 0 12px;
+    text-transform:uppercase; letter-spacing:.08em;
+  }
+  h3:first-of-type{margin-top:2px}
+  h3 .count{
+    font-weight:600; color:var(--muted); background:var(--hair);
+    border-radius:999px; padding:1px 8px; margin-left:7px;
+    font-size:11px; letter-spacing:.02em; text-transform:none;
+  }
 
-  /* bullet list in the reference's "· item" style */
+  /* ---------- bullet list ---------- */
   ul.dot{list-style:none; margin:0; padding:0}
   ul.dot > li{
-    position:relative; padding-left:16px; margin:7px 0; font-size:15.5px; line-height:1.7;
+    position:relative; padding-left:17px; margin:8px 0;
+    font-size:15.5px; line-height:1.72; color:var(--ink-soft);
   }
-  ul.dot > li::before{content:"·"; position:absolute; left:2px; color:var(--muted); font-weight:700}
-  ul.dot .yr{color:var(--muted); white-space:nowrap}
-  .note{color:var(--muted); font-size:14.5px; margin-top:14px}
+  ul.dot > li::before{
+    content:""; position:absolute; left:3px; top:.72em;
+    width:4px; height:4px; border-radius:50%; background:var(--muted); opacity:.6;
+  }
+  ul.dot .yr{color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums; font-size:14.5px}
+  .note{color:var(--muted); font-size:14.5px; margin-top:16px}
+
+  /* ---------- paper rows ---------- */
+  #papers ul.dot > li{
+    padding:7px 10px 7px 27px; margin:1px -10px; border-radius:8px;
+    transition:background .15s ease;
+  }
+  #papers ul.dot > li::before{left:13px; top:1.05em}
+  #papers ul.dot > li:hover{background:var(--hair)}
+
+  /* ---------- timeline (education and career) ---------- */
+  ol.tl{list-style:none; margin:0; padding:0 0 0 22px; position:relative}
+  ol.tl::before{
+    content:""; position:absolute; left:6px; top:10px; bottom:10px; width:2px;
+    background:var(--rail); border-radius:2px;
+  }
+  ol.tl > li{position:relative; padding:0 0 20px}
+  ol.tl > li:last-child{padding-bottom:2px}
+  ol.tl > li::before{
+    content:""; position:absolute; left:-22px; top:8px;
+    width:10px; height:10px; border-radius:50%;
+    background:var(--card); border:2px solid var(--rail);
+  }
+  ol.tl > li.now::before{background:var(--accent); border-color:var(--accent)}
+  ol.tl .tl-yr{
+    font-size:13px; color:var(--muted); font-variant-numeric:tabular-nums;
+    letter-spacing:.01em; margin-bottom:1px;
+  }
+  ol.tl .tl-role{font-size:16px; font-weight:700; letter-spacing:-.01em; color:var(--ink)}
+  ol.tl .tl-org{display:block; font-size:15px; color:var(--ink-soft); margin-top:1px}
 
   /* ---------- hero ---------- */
   header.hero{
-    background:var(--card); border:1px solid var(--line); border-radius:10px;
-    padding:38px 36px; margin:22px 0;
-    display:flex; gap:32px; align-items:flex-start; flex-wrap:wrap;
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:38px 38px 32px; margin:24px 0 20px; box-shadow:var(--shadow);
+    display:flex; gap:34px; align-items:flex-start; flex-wrap:wrap;
+    position:relative; overflow:hidden;
+  }
+  header.hero::before{
+    content:""; position:absolute; inset:0 0 auto 0; height:3px;
+    background:linear-gradient(90deg,var(--accent),#22c1c3 55%,#4ade80);
+    opacity:.85;
   }
   /* ID-style portrait photo (3:4) — rectangle, not circle, so the face is not cropped */
   header.hero img{
-    width:112px; height:149px; border-radius:8px; object-fit:cover; object-position:center top;
-    flex:none; border:1px solid var(--line); background:#fff;
+    width:116px; height:154px; border-radius:10px; object-fit:cover; object-position:center top;
+    flex:none; border:1px solid var(--line); background:#fff; box-shadow:var(--shadow);
   }
   header.hero .who{flex:1 1 380px; min-width:0}
-  header.hero .greet{font-size:15px; color:var(--muted); margin:0 0 4px}
-  header.hero h1{margin:0 0 6px; font-size:30px; font-weight:700; letter-spacing:-.02em}
-  header.hero .role{margin:0 0 14px; font-size:15.5px; color:var(--muted)}
-  header.hero p.bio{margin:0 0 16px; font-size:15.5px}
+  header.hero .greet{
+    font-size:12.5px; color:var(--muted); margin:0 0 7px;
+    text-transform:uppercase; letter-spacing:.1em; font-weight:600;
+  }
+  header.hero h1{margin:0 0 7px; font-size:clamp(26px,4.2vw,32px); font-weight:700; letter-spacing:-.025em; line-height:1.25}
+  header.hero .role{margin:0 0 15px; font-size:15.5px; color:var(--muted)}
+  header.hero p.bio{margin:0 0 18px; font-size:15.5px; color:var(--ink-soft); max-width:62ch}
   .links{display:flex; flex-wrap:wrap; gap:8px}
   .links a{
-    font-size:14px; padding:6px 13px; border:1px solid var(--line); border-radius:999px;
-    color:var(--ink); background:#fff;
+    font-size:13.5px; padding:6px 14px; border:1px solid var(--line); border-radius:999px;
+    color:var(--ink-soft); background:var(--chip); transition:border-color .16s ease, color .16s ease, background .16s ease, transform .16s ease;
   }
-  .links a:hover{border-color:#c7cbd1; text-decoration:none}
-  .metrics{display:flex; gap:26px; flex-wrap:wrap; margin:18px 0 0; padding-top:16px; border-top:1px solid var(--line)}
-  .metrics div{font-size:14.5px; color:var(--muted)}
-  .metrics b{display:block; font-size:22px; color:var(--ink); font-weight:700; line-height:1.3}
+  .links a:hover{
+    border-color:var(--accent); color:var(--accent); background:var(--accent-weak);
+    text-decoration:none; transform:translateY(-1px);
+  }
+  .metrics{
+    display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px;
+    margin:22px 0 0; padding-top:20px; border-top:1px solid var(--hair);
+  }
+  .metrics div{
+    font-size:13px; color:var(--muted); background:var(--hair);
+    border-radius:10px; padding:12px 14px; line-height:1.5;
+  }
+  .metrics b{
+    display:block; font-size:22px; color:var(--ink); font-weight:700;
+    line-height:1.25; letter-spacing:-.02em; font-variant-numeric:tabular-nums;
+  }
 
-  footer{max-width:var(--maxw); margin:0 auto; padding:0 24px 60px; color:var(--muted); font-size:14px}
+  /* ---------- dashboard ---------- */
+  .dash{display:none}
+  .dash.on{display:block}
+  .dash-kpi{
+    display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:0 0 24px;
+  }
+  @media (max-width:560px){ .dash-kpi{grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px} }
+  .dash-kpi .k{
+    background:var(--hair); border-radius:11px; padding:13px 15px; line-height:1.45;
+  }
+  .dash-kpi .k b{
+    display:block; font-size:24px; font-weight:700; color:var(--ink);
+    letter-spacing:-.025em; font-variant-numeric:tabular-nums; line-height:1.2;
+  }
+  .dash-kpi .k span{font-size:12.5px; color:var(--muted)}
+
+  .dash-tabs{display:flex; gap:6px; margin:0 0 16px}
+  .dash-tabs button{
+    font:inherit; font-size:13px; font-weight:600; cursor:pointer;
+    padding:6px 14px; border-radius:999px; border:1px solid var(--line);
+    background:var(--chip); color:var(--muted);
+    transition:border-color .16s ease, color .16s ease, background .16s ease;
+  }
+  .dash-tabs button:hover{color:var(--ink); border-color:var(--rail)}
+  .dash-tabs button[aria-selected="true"]{
+    background:var(--accent); border-color:var(--accent); color:#fff;
+  }
+
+  .chart{position:relative}
+  .chart .bars{
+    display:flex; align-items:flex-end; gap:5px; height:132px;
+    padding:0; margin:0 0 8px; list-style:none;
+  }
+  .chart .bars li{flex:1 1 0; min-width:0; display:flex; flex-direction:column; justify-content:flex-end; height:100%}
+  .chart .bar{
+    width:100%; border:0; padding:0; cursor:pointer; border-radius:5px 5px 2px 2px;
+    background:var(--accent); opacity:.32; min-height:3px;
+    transition:opacity .16s ease, transform .16s ease;
+  }
+  .chart .bar:hover{opacity:.72}
+  .chart .bar[aria-pressed="true"]{opacity:1}
+  .chart .xaxis{
+    display:flex; gap:5px; list-style:none; padding:0; margin:0;
+    font-size:11px; color:var(--muted); font-variant-numeric:tabular-nums;
+  }
+  .chart .xaxis li{flex:1 1 0; min-width:0; text-align:center}
+
+  .rowchart{list-style:none; margin:0; padding:0; display:grid; gap:7px}
+  .rowchart li{display:grid; grid-template-columns:minmax(140px,235px) 1fr auto; gap:11px; align-items:center}
+  .rowchart .lab{
+    font-size:13.5px; color:var(--ink-soft); cursor:pointer; background:none;
+    border:0; padding:0; font:inherit; font-size:13.5px; text-align:left;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .rowchart .lab:hover{color:var(--accent)}
+  .rowchart .track{background:var(--hair); border-radius:5px; height:11px; overflow:hidden}
+  .rowchart .fill{display:block; height:100%; background:var(--accent); opacity:.4; border-radius:5px;
+    transition:opacity .16s ease}
+  .rowchart li.sel .fill{opacity:1}
+  .rowchart li.sel .lab{color:var(--accent); font-weight:700}
+  .rowchart .n{font-size:12.5px; color:var(--muted); font-variant-numeric:tabular-nums; min-width:20px; text-align:right}
+
+  .dash-status{
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    margin:20px 0 0; padding-top:16px; border-top:1px solid var(--hair);
+    font-size:13.5px; color:var(--muted);
+  }
+  .dash-status button{
+    font:inherit; font-size:12.5px; cursor:pointer; padding:4px 11px; border-radius:999px;
+    border:1px solid var(--line); background:var(--chip); color:var(--ink-soft);
+  }
+  .dash-status button:hover{border-color:var(--accent); color:var(--accent)}
+  .tip{
+    position:absolute; pointer-events:none; opacity:0; transform:translate(-50%,-6px);
+    background:var(--ink); color:var(--card); font-size:12px; line-height:1.4;
+    padding:5px 9px; border-radius:7px; white-space:nowrap; z-index:5;
+    transition:opacity .12s ease;
+  }
+  .tip.on{opacity:1}
+
+  /* ---------- media cards ---------- */
+  ul.media{list-style:none; margin:0; padding:0; display:grid; gap:12px}
+  ul.media > li{
+    display:grid; grid-template-columns:132px 1fr; gap:15px; align-items:start;
+    padding:12px; margin:0 -12px; border-radius:11px; transition:background .15s ease;
+  }
+  ul.media > li:hover{background:var(--hair)}
+  ul.media .thumb{
+    display:block; width:132px; aspect-ratio:3/2; border-radius:9px; overflow:hidden;
+    background:var(--hair); border:1px solid var(--line); position:relative;
+  }
+  ul.media .thumb img{width:100%; height:100%; object-fit:cover; display:block}
+  ul.media .thumb.noimg::after{
+    content:attr(data-label); position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    padding:8px; font-size:12px; font-weight:700; letter-spacing:.02em;
+    color:var(--muted); background:var(--hair);
+  }
+  ul.media .mtitle{font-size:15px; font-weight:600; line-height:1.5; display:block}
+  ul.media .mmeta{font-size:13px; color:var(--muted); margin-top:5px}
+
+  footer{
+    max-width:var(--maxw); margin:0 auto; padding:22px 24px 64px;
+    color:var(--muted); font-size:13.5px; border-top:1px solid var(--line);
+  }
   footer a{color:var(--muted); text-decoration:underline}
+  footer a:hover{color:var(--ink)}
 
   @media (max-width:640px){
-    section, header.hero{padding:24px 20px; border-radius:8px}
-    section > h2{font-size:22px}
-    header.hero h1{font-size:25px}
-    header.hero img{width:92px; height:122px}
-    main{padding:0 14px 60px}
-    nav.top .inner{padding:0 14px; gap:16px}
+    section, header.hero{padding:24px 20px; border-radius:12px}
+    section > h2{font-size:21px}
+    section > h2::before{height:17px}
+    header.hero{gap:20px; padding-top:30px}
+    header.hero img{width:88px; height:117px}
+    header.hero p.bio{font-size:15px}
+    .metrics{gap:7px}
+    .metrics div{padding:10px; font-size:12px}
+    .metrics b{font-size:18px}
+    main{padding:0 14px 64px}
+    footer{padding:20px 14px 56px}
+    nav.top .inner{padding:0 14px; gap:12px}
+    ul.dot > li{font-size:15px}
   }
-
-  nav.top .lang{margin-left:auto; display:flex; align-items:center; gap:6px; font-size:13.5px; white-space:nowrap}
-  nav.top .lang a{color:#818181; padding:2px 7px; border-radius:5px}
-  nav.top .lang a:hover{color:var(--ink); background:#f1f3f5; text-decoration:none}
-  nav.top .lang .cur{color:var(--ink); font-weight:700; background:#f1f3f5; padding:2px 7px; border-radius:5px}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important; animation:none !important}
+  }
+  @media print{
+    nav.top, .links, footer a{display:none}
+    body{background:#fff}
+    section, header.hero{box-shadow:none; border-color:#ddd; break-inside:avoid; page-break-inside:avoid}
+  }
 </style>
 </head>
 <body>
 
 <nav class="top">
   <div class="inner">
-    <span class="brand">우청원</span>
-    <a class="item" href="#about">소개</a>
-    <a class="item" href="#research">연구분야</a>
-    <a class="item" href="#education">학력</a>
-    <a class="item" href="#career">경력</a>
-    <a class="item" href="#projects">연구과제</a>
-    <a class="item" href="#services">대외활동</a>
-    <a class="item" href="#awards">수상</a>
-    <a class="item" href="#papers">논문</a>
-    <a class="item" href="#media">언론</a>
-    <a class="item" href="#contact">연락처</a>
+    <a class="brand" href="#about">우청원</a>
+    <div class="scroller">
+      <a class="item" href="#about">소개</a>
+      <a class="item" href="#research">연구분야</a>
+      <a class="item" href="#background">학력·경력</a>
+      <a class="item" href="#projects">연구과제</a>
+      <a class="item" href="#services">대외활동</a>
+      <a class="item" href="#awards">수상</a>
+      <a class="item" href="#papers">논문</a>
+      <a class="item" href="#media">언론</a>
+      <a class="item" href="#contact">연락처</a>
+    </div>
     <span class="lang"><span class="cur">한국어</span><a href="/">English</a></span>
   </div>
 </nav>
@@ -194,6 +436,39 @@
     </div>
   </header>
 
+  <section id="dashboard" class="dash"
+           data-msg-all="전체 논문 {total}편 — 연도나 주제를 선택하면 아래 목록이 걸러집니다."
+           data-msg-filter="{total}편 중 {n}편 표시 · {label}"
+           data-tip="{label} {n}편">
+    <h2>연구 한눈에 보기</h2>
+
+    <div class="dash-kpi">
+      <div class="k"><b data-kpi="papers">42</b><span>게재논문</span></div>
+      <div class="k"><b>1,450+</b><span>피인용</span></div>
+      <div class="k"><b>17</b><span>h-index</span></div>
+      <div class="k"><b data-kpi="journals">23</b><span>게재 학술지</span></div>
+      <div class="k"><b data-kpi="projects">21</b><span>수행 연구과제</span></div>
+      <div class="k"><b data-kpi="since">2014</b><span>첫 게재연도</span></div>
+    </div>
+
+    <div class="dash-tabs" role="tablist" aria-label="차트 보기">
+      <button type="button" role="tab" aria-selected="true" data-view="year">연도별</button>
+      <button type="button" role="tab" aria-selected="false" data-view="topic">주제별</button>
+    </div>
+
+    <div class="chart" data-panel="year">
+      <ul class="bars"></ul>
+      <ul class="xaxis"></ul>
+      <div class="tip" aria-hidden="true"></div>
+    </div>
+    <ul class="rowchart" data-panel="topic" hidden></ul>
+
+    <div class="dash-status">
+      <span class="msg"></span>
+      <button type="button" class="clear" hidden>전체 보기</button>
+    </div>
+  </section>
+
   <section id="research">
     <h2>연구분야</h2>
     <ul class="dot">
@@ -206,30 +481,63 @@
     <p class="note"><em>Journal of Cleaner Production</em>, <em>Technology Analysis &amp; Strategic Management</em>, <em>Sustainable Development</em>, <em>Business Strategy and the Environment</em>, <em>Renewable &amp; Sustainable Energy Reviews</em>, <em>회계학연구</em> 등에 게재.</p>
   </section>
 
-  <section id="education">
-    <h2>학력</h2>
-    <ul class="dot">
-      <li><strong>공학박사</strong>, 한국과학기술원(KAIST) 기술경영학과 <span class="yr">2016</span></li>
-      <li><strong>공학석사</strong>, 한국과학기술원(KAIST) 경영과학과 <span class="yr">2013</span></li>
-      <li><strong>공학사</strong>, 부산대학교 기계공학과 <span class="yr">2011</span></li>
-    </ul>
-  </section>
+  <section id="background">
+    <h2>학력 · 경력</h2>
 
-  <section id="career">
-    <h2>경력</h2>
-    <ul class="dot">
-      <li><strong>부교수</strong>, 국립창원대학교 회계학과 <span class="yr">2024.11 ~ 현재</span></li>
-      <li><strong>조교수</strong>, 경남대학교 <span class="yr">2022.09 ~ 2024.10</span></li>
-      <li><strong>연구위원</strong>, 과학기술정책연구원(STEPI) <span class="yr">2016.02 ~ 2022.08</span></li>
-      <li><strong>겸임교원</strong>, 부경대학교 기술경영전문대학원 <span class="yr">2020.03 ~ 2022.08</span></li>
-      <li><strong>겸임교수</strong>, Reformed University <span class="yr">2021</span></li>
-    </ul>
+    <h3 id="education">학력</h3>
+    <ol class="tl">
+      <li>
+        <div class="tl-yr">2016</div>
+        <div><span class="tl-role">공학박사</span>
+        <span class="tl-org">한국과학기술원(KAIST) 기술경영학과</span></div>
+      </li>
+      <li>
+        <div class="tl-yr">2013</div>
+        <div><span class="tl-role">공학석사</span>
+        <span class="tl-org">한국과학기술원(KAIST) 경영과학과</span></div>
+      </li>
+      <li>
+        <div class="tl-yr">2011</div>
+        <div><span class="tl-role">공학사</span>
+        <span class="tl-org">부산대학교 기계공학과</span></div>
+      </li>
+    </ol>
+
+    <h3 id="career">경력</h3>
+    <ol class="tl">
+      <li class="now">
+        <div class="tl-yr">2024.11 ~ 현재</div>
+        <div><span class="tl-role">부교수</span>
+        <span class="tl-org">국립창원대학교 회계학과</span></div>
+      </li>
+      <li>
+        <div class="tl-yr">2022.09 ~ 2024.10</div>
+        <div><span class="tl-role">조교수</span>
+        <span class="tl-org">경남대학교</span></div>
+      </li>
+      <li>
+        <div class="tl-yr">2016.02 ~ 2022.08</div>
+        <div><span class="tl-role">연구위원</span>
+        <span class="tl-org">과학기술정책연구원(STEPI)</span></div>
+      </li>
+      <li>
+        <div class="tl-yr">2020.03 ~ 2022.08</div>
+        <div><span class="tl-role">겸임교원</span>
+        <span class="tl-org">부경대학교 기술경영전문대학원</span></div>
+      </li>
+      <li>
+        <div class="tl-yr">2021</div>
+        <div><span class="tl-role">겸임교수</span>
+        <span class="tl-org">Reformed University</span></div>
+      </li>
+    </ol>
   </section>
 
   <section id="projects">
     <h2>주요 연구과제</h2>
     <h3>연구책임자 (PI)</h3>
     <ul class="dot">
+      <li><strong>AI–탄소 디커플링을 위한 지표 개발 및 실증분석: 디지털 리바운드와 Green AI 전환경로를 중심으로</strong> — 한국연구재단 개인기초연구 핵심연구(기본연구A) <span class="yr">2026.09 ~ 2029.08</span></li>
       <li>공공기술의 상용화 불확실성 완화를 통한 기술거래 활성화 방안 연구, 기술보증기금(KIBO) <span class="yr">2026</span></li>
       <li>정보보호공시 데이터를 활용한 IT 투자와 기업가치 연구, 국립창원대학교 자율연구과제 <span class="yr">2025~2026</span></li>
       <li>공급업체의 원가구조와 친환경 활동 연구, 한국연구재단 인문사회분야 신진연구자지원사업 (NRF-2023S1A5A8079951) <span class="yr">2023~</span></li>
@@ -285,11 +593,11 @@
     <h2>논문</h2>
     <p class="note" style="margin-top:0">게재논문 42편 전체입니다. 각 논문의 요약 페이지에서 초록, 서지정보, APA/BibTeX 인용형식을 확인할 수 있습니다.</p>
 
-    <h3>탄소·기후·환경</h3>
+    <h3 data-topic="carbon">탄소·기후·환경</h3>
     <ul class="dot">
-      <li><a href="/papers/cbam-korea-2024.html">Does the EU Carbon Border Adjustment Mechanism (CBAM) Affect Korean Firms&#x27; Stock Prices?</a> — <em>Review of Accounting and Policy Studies</em>, <span class="yr">2024</span></li>
+      <li><a href="/papers/cbam-korea-2024.html">Does the EU Carbon Border Adjustment Mechanism (CBAM) Affect Korean Firms&#x27; Stock Prices?</a> — <em>회계와정책연구</em>, <span class="yr">2024</span></li>
       <li><a href="/papers/climate-exposure-2024.html">Does Climate Change Exposure Hurt Corporate Financial and Energy Performance?</a> — <em>Journal of Cleaner Production</em>, <span class="yr">2024</span></li>
-      <li><a href="/papers/supplier-cogs-environmental-2024.html">Do Cost-Squeezed Suppliers Give Up on Green?</a> — <em>Review of Accounting and Policy Studies</em>, <span class="yr">2024</span></li>
+      <li><a href="/papers/supplier-cogs-environmental-2024.html">Do Cost-Squeezed Suppliers Give Up on Green?</a> — <em>회계와정책연구</em>, <span class="yr">2024</span></li>
       <li><a href="/papers/carbon-risk-audit-fees-2023.html">Does Carbon Risk Increase Audit Hours and Audit Fees?</a> — <em>Korea International Accounting Review</em>, <span class="yr">2023</span></li>
       <li><a href="/papers/supplier-communication-green-integration-2016.html">Suppliers&#x27; communication capability and external green integration for green and financial performance in Korean construction industry</a> — <em>Journal of Cleaner Production</em>, <span class="yr">2016</span></li>
       <li><a href="/papers/supplier-environmental-capabilities-gscm-2016.html">Environmental Capabilities of Suppliers for Green Supply Chain Management in Construction Projects: A Case Study in Korea</a> — <em>Sustainability</em>, <span class="yr">2016</span></li>
@@ -298,7 +606,7 @@
       <li><a href="/papers/complementary-assets-environmental-performance-2014.html">Exploring the Impact of Complementary Assets on the Environmental Performance in Manufacturing SMEs</a> — <em>Sustainability</em>, <span class="yr">2014</span></li>
     </ul>
 
-    <h3>혁신·R&amp;D·원가행태</h3>
+    <h3 data-topic="innovation">혁신·R&amp;D·원가행태</h3>
     <ul class="dot">
       <li><a href="/papers/performance-pay-differentiation-innovation-2026.html">성과보상차등이 기업 혁신성과에 미치는 영향: 혁신 프로세스 단계별 분석</a> — <em>혁신기업연구</em>, <span class="yr">2026</span></li>
       <li><a href="/papers/ict-innovation-machine-learning-2024.html">Can Machine Learning Predict ICT Business-Process Innovation?</a> — <em>Technology Analysis &amp; Strategic Management</em>, <span class="yr">2024</span></li>
@@ -316,7 +624,7 @@
       <li><a href="/papers/labor-union-innovation-productivity-2015.html">Labor Union Effects on Innovation and Commercialization Productivity: An Integrated Propensity Score Matching and Two-Stage Data Envelopment Analysis</a> — <em>Sustainability</em>, <span class="yr">2015</span></li>
     </ul>
 
-    <h3>에너지·환경정책</h3>
+    <h3 data-topic="energy">에너지·환경정책</h3>
     <ul class="dot">
       <li><a href="/papers/renewable-energy-rd-performance-2023.html">R&amp;D performance and relevant factors of renewable energy projects: separating innovation and economic perspectives</a> — <em>International Journal of Environmental Science and Technology</em>, <span class="yr">2023</span></li>
       <li><a href="/papers/clean-energy-rd-efficiency-dea-2019.html">DEA를 이용한 청정에너지기술 R&amp;D 효율성 분석 : 신재생에너지기술 R&amp;D과제를 대상으로</a> — <em>기술혁신학회지</em>, <span class="yr">2019</span></li>
@@ -325,7 +633,7 @@
       <li><a href="/papers/hydrogen-economy-input-output-2014.html">The role of hydrogen energy development in the Korean economy: An input–output analysis</a> — <em>International Journal of Hydrogen Energy</em>, <span class="yr">2014</span></li>
     </ul>
 
-    <h3>과학기술정책 평가</h3>
+    <h3 data-topic="policy">과학기술정책 평가</h3>
     <ul class="dot">
       <li><a href="/papers/policy-instruments-rd-efficiency-2021.html">정책수단별 기업 성과 비교 연구 ：R&amp;D 효율성을 중심으로</a> — <em>회계와정책연구</em>, <span class="yr">2021</span></li>
       <li><a href="/papers/materials-components-rd-cooperation-2019.html">연구개발 수행기관 및 협력유형이 소재부품 R&amp;D 효율성에 미치는 영향</a> — <em>기술혁신연구</em>, <span class="yr">2019</span></li>
@@ -334,24 +642,24 @@
       <li><a href="/papers/daedeok-innopolis-psm-2016.html">대덕연구개발특구의 지원사업 성과분석:성향점수매칭(PSM) 방법을 중심으로</a> — <em>경영교육연구</em>, <span class="yr">2016</span></li>
     </ul>
 
-    <h3>IT·정보보안·디지털</h3>
+    <h3 data-topic="it">IT·정보보안·디지털</h3>
     <ul class="dot">
-      <li><a href="/papers/it-security-investment-firm-value-2026.html">How Much IT Investment Is Too Much?</a> — <em>Review of Accounting and Policy Studies</em>, <span class="yr">2026</span></li>
-      <li><a href="/papers/it-investment-cost-efficiency-2025.html">Does IT Investment Improve Cost Efficiency?</a> — <em>Korean Business Education Review</em>, <span class="yr">2025</span></li>
+      <li><a href="/papers/it-security-investment-firm-value-2026.html">How Much IT Investment Is Too Much?</a> — <em>회계와정책연구</em>, <span class="yr">2026</span></li>
+      <li><a href="/papers/it-investment-cost-efficiency-2025.html">Does IT Investment Improve Cost Efficiency?</a> — <em>경영교육연구</em>, <span class="yr">2025</span></li>
       <li><a href="/papers/blockchain-research-data-management-2023.html">Exploring the Determinants of Blockchain Acceptance for Research Data Management</a> — <em>Journal of Computer Information Systems</em>, <span class="yr">2023</span></li>
     </ul>
 
-    <h3>ESG·CSR·사회적기업</h3>
+    <h3 data-topic="esg">ESG·CSR·사회적기업</h3>
     <ul class="dot">
       <li><a href="/papers/esg-balance-innovation-performance-2025.html">Is ESG balance beneficial for the relationship between innovation and corporate financial performance?</a> — <em>혁신기업연구</em>, <span class="yr">2025</span></li>
       <li><a href="/papers/social-enterprise-sustainability-2025.html">Can Social Enterprises Be Sustainable Through Innovation and Social Performance-Based Incentives?</a> — <em>Sustainable Development</em>, <span class="yr">2025</span></li>
       <li><a href="/papers/seasoned-equity-offering-leverage-2022.html">유상증자의 공시효과와 영업재무레버리지의 관계에 관한 실증연구</a> — <em>회계와정책연구</em>, <span class="yr">2022</span></li>
-      <li><a href="/papers/organizational-factors-performance-management-2021.html">How Do Organizational Factors Influence Performance through Performance Management System as Innovation?</a> — <em>Review of Accounting and Policy Studies</em>, <span class="yr">2021</span></li>
+      <li><a href="/papers/organizational-factors-performance-management-2021.html">How Do Organizational Factors Influence Performance through Performance Management System as Innovation?</a> — <em>회계와정책연구</em>, <span class="yr">2021</span></li>
       <li><a href="/papers/csr-venture-firm-performance-2020.html">CSR 활동이 벤처기업의 경영성과에 미치는 영향: 기업의 성장단계를 구분하여</a> — <em>벤처창업연구</em>, <span class="yr">2020</span></li>
       <li><a href="/papers/csr-social-ties-firm-performance-2019.html">CSR, social ties and firm performance</a> — <em>Corporate Governance: The International Journal of Business in Society</em>, <span class="yr">2019</span></li>
     </ul>
 
-    <h3>저서 (공저)</h3>
+    <h3 data-topic="books">저서 (공저)</h3>
     <ul class="dot">
       <li>2025 동남권 과학기술정책 총서, 국립부경대학교 과학기술정책 전문인력 육성지원사업단 <span class="yr">2026</span></li>
       <li>2024 동남권 과학기술정책 총서, 국립부경대학교 과학기술정책 전문인력 육성지원사업단 <span class="yr">2025</span></li>
@@ -365,15 +673,43 @@
     <h2>언론</h2>
 
     <h3>국립창원대학교 (2024~)</h3>
-    <ul class="dot">
-      <li><a href="https://www.cnbnews.com/news/article.html?no=773274">국립창원대 우청원 교수팀, 국제저명학술지 논문 게재</a> — CNB뉴스</li>
-      <li><a href="http://www.kyosu.net/news/articleView.html?idxno=155245">국립창원대 회계학과 우청원 교수 연구팀, 국제저명학술지 논문 게재</a> — 교수신문</li>
+    <ul class="media">
+      <li>
+        <a class="thumb" data-label="CNB뉴스" href="https://www.cnbnews.com/news/article.html?no=773274">
+          <img src="https://cdn.cnbnews.com/news/photo/202601/773274_445764_1331.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('noimg');this.remove()">
+        </a>
+        <div>
+          <a class="mtitle" href="https://www.cnbnews.com/news/article.html?no=773274">국립창원대 우청원 교수팀, 국제저명학술지 논문 게재</a>
+          <div class="mmeta">CNB뉴스 · <span class="yr">2026.01</span></div>
+        </div>
+      </li>
+      <li>
+        <a class="thumb" data-label="교수신문" href="http://www.kyosu.net/news/articleView.html?idxno=155245">
+          <img src="https://cdn.kyosu.net/news/photo/202601/155245_150761_5424.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('noimg');this.remove()">
+        </a>
+        <div>
+          <a class="mtitle" href="http://www.kyosu.net/news/articleView.html?idxno=155245">국립창원대 회계학과 우청원 교수 연구팀, 국제저명학술지 논문 게재</a>
+          <div class="mmeta">교수신문 · <span class="yr">2026.01</span></div>
+        </div>
+      </li>
     </ul>
 
     <h3>과학기술정책연구원 STEPI (2016~2022)</h3>
-    <ul class="dot">
-      <li><a href="https://stepi.re.kr/site/stepiko/ex/bbs/View.do?cbIdx=1204&amp;bcIdx=37147">과학기술정책연구원 개원 34주년 기념식 — 우수논문상 수상</a> — STEPI, <span class="yr">2021.05</span></li>
-      <li><a href="https://www.stepi.re.kr/site/stepiko/ex/bbs/View.do?cbIdx=1205&amp;bcIdx=27561">실증연구 없는 기술사업화는 가능한가? (STEPI Insight 제254호)</a> — STEPI, <span class="yr">2020.06</span></li>
+    <ul class="media">
+      <li>
+        <a class="thumb noimg" data-label="STEPI" href="https://stepi.re.kr/site/stepiko/ex/bbs/View.do?cbIdx=1204&amp;bcIdx=37147"></a>
+        <div>
+          <a class="mtitle" href="https://stepi.re.kr/site/stepiko/ex/bbs/View.do?cbIdx=1204&amp;bcIdx=37147">과학기술정책연구원 개원 34주년 기념식 — 우수논문상 수상</a>
+          <div class="mmeta">STEPI · <span class="yr">2021.05</span></div>
+        </div>
+      </li>
+      <li>
+        <a class="thumb noimg" data-label="STEPI Insight" href="https://www.stepi.re.kr/site/stepiko/ex/bbs/View.do?cbIdx=1205&amp;bcIdx=27561"></a>
+        <div>
+          <a class="mtitle" href="https://www.stepi.re.kr/site/stepiko/ex/bbs/View.do?cbIdx=1205&amp;bcIdx=27561">실증연구 없는 기술사업화는 가능한가? (STEPI Insight 제254호)</a>
+          <div class="mmeta">STEPI · <span class="yr">2020.06</span></div>
+        </div>
+      </li>
     </ul>
   </section>
 
@@ -398,5 +734,271 @@
   <a href="/papers/">논문 요약</a> · <a href="/llms.txt">llms.txt</a>
 </footer>
 
+<script>
+(function () {
+  var slice = function (x) { return Array.prototype.slice.call(x); };
+
+  /* ---------- nav: highlight the section currently in view ---------- */
+  var links = slice(document.querySelectorAll('nav.top a.item'));
+  var navMap = {};
+  var navTargets = [];
+  links.forEach(function (a) {
+    var el = document.getElementById(a.getAttribute('href').slice(1));
+    if (el) { navMap[a.getAttribute('href').slice(1)] = a; navTargets.push(el); }
+  });
+
+  function setActive(id) {
+    links.forEach(function (a) {
+      a.classList.remove('active');
+      a.removeAttribute('aria-current');
+    });
+    var a = navMap[id];
+    if (!a) return;
+    a.classList.add('active');
+    a.setAttribute('aria-current', 'true');
+  }
+
+  if ('IntersectionObserver' in window && navTargets.length) {
+    var ratio = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        ratio[e.target.id] = e.isIntersecting ? e.intersectionRatio : 0;
+      });
+      var best = null;
+      var bestVal = 0;
+      navTargets.forEach(function (t) {
+        var v = ratio[t.id] || 0;
+        if (v > bestVal) { bestVal = v; best = t.id; }
+      });
+      if (best) setActive(best);
+    }, { rootMargin: '-80px 0px -50% 0px', threshold: [0, 0.15, 0.4, 0.75, 1] });
+    navTargets.forEach(function (t) { io.observe(t); });
+  }
+
+  /* ---------- read the publication list as the single source of truth ---------- */
+  var papersSec = document.getElementById('papers');
+  if (!papersSec) return;
+
+  /* the lead paragraph describes the unfiltered list, so it is hidden while filtering */
+  var allNote = papersSec.querySelector('p.note');
+
+  var groups = [];
+  slice(papersSec.querySelectorAll('h3')).forEach(function (h) {
+    var ul = h.nextElementSibling;
+    while (ul && ul.tagName !== 'UL') { ul = ul.nextElementSibling; }
+    if (!ul) return;
+    groups.push({
+      key: h.getAttribute('data-topic') || '',
+      label: h.textContent.trim(),
+      head: h,
+      list: ul,
+      items: slice(ul.children)
+    });
+  });
+
+  function yearOf(li) {
+    var y = li.querySelector('.yr');
+    var m = y && y.textContent.match(/\d{4}/);
+    return m ? m[0] : '';
+  }
+
+  var paperGroups = groups.filter(function (g) { return g.key !== 'books'; });
+  var allPapers = [];
+  paperGroups.forEach(function (g) { allPapers = allPapers.concat(g.items); });
+  var total = allPapers.length;
+
+  /* count badge on each category heading */
+  groups.forEach(function (g) {
+    var badge = document.createElement('span');
+    badge.className = 'count';
+    badge.textContent = g.items.length;
+    g.head.appendChild(badge);
+    g.badge = badge;
+  });
+
+  /* ---------- dashboard ---------- */
+  var dash = document.getElementById('dashboard');
+  if (!dash) return;
+
+  function fmt(tpl, vals) {
+    return String(tpl || '').replace(/\{(\w+)\}/g, function (_, k) {
+      return vals[k] === undefined ? '' : vals[k];
+    });
+  }
+
+  var years = {};
+  allPapers.forEach(function (li) {
+    var y = yearOf(li);
+    if (y) { years[y] = (years[y] || 0) + 1; }
+  });
+  var yearKeys = Object.keys(years).sort();
+
+  /* KPI values derived from the page itself */
+  /* the journal is the last <em> on the line; an earlier one may be a language note */
+  var journals = {};
+  allPapers.forEach(function (li) {
+    var ems = li.querySelectorAll('em');
+    if (ems.length) { journals[ems[ems.length - 1].textContent.trim().toLowerCase()] = 1; }
+  });
+  var projectsSec = document.getElementById('projects');
+  var projectCount = projectsSec ? projectsSec.querySelectorAll('ul > li').length : 0;
+
+  var kpi = {
+    papers: total,
+    journals: Object.keys(journals).length,
+    projects: projectCount,
+    since: yearKeys.length ? yearKeys[0] : ''
+  };
+  slice(dash.querySelectorAll('[data-kpi]')).forEach(function (el) {
+    var v = kpi[el.getAttribute('data-kpi')];
+    if (v) { el.textContent = v; }
+  });
+
+  /* year bars */
+  var barsEl = dash.querySelector('.bars');
+  var axisEl = dash.querySelector('.xaxis');
+  var tipEl = dash.querySelector('.tip');
+  var maxY = 0;
+  yearKeys.forEach(function (y) { if (years[y] > maxY) { maxY = years[y]; } });
+
+  yearKeys.forEach(function (y) {
+    var li = document.createElement('li');
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'bar';
+    b.style.height = Math.round((years[y] / maxY) * 100) + '%';
+    b.setAttribute('data-year', y);
+    b.setAttribute('aria-pressed', 'false');
+    b.setAttribute('aria-label', y + ': ' + years[y]);
+    li.appendChild(b);
+    barsEl.appendChild(li);
+
+    var ax = document.createElement('li');
+    ax.textContent = "'" + y.slice(2);
+    axisEl.appendChild(ax);
+  });
+
+  /* topic rows */
+  var rowsEl = dash.querySelector('.rowchart');
+  var maxT = 0;
+  paperGroups.forEach(function (g) { if (g.items.length > maxT) { maxT = g.items.length; } });
+  paperGroups.forEach(function (g) {
+    var li = document.createElement('li');
+    li.setAttribute('data-topic', g.key);
+    var lab = document.createElement('button');
+    lab.type = 'button';
+    lab.className = 'lab';
+    lab.textContent = g.label;
+    lab.title = g.label;
+    var track = document.createElement('span');
+    track.className = 'track';
+    var fill = document.createElement('span');
+    fill.className = 'fill';
+    fill.style.width = Math.round((g.items.length / maxT) * 100) + '%';
+    track.appendChild(fill);
+    var n = document.createElement('span');
+    n.className = 'n';
+    n.textContent = g.items.length;
+    li.appendChild(lab);
+    li.appendChild(track);
+    li.appendChild(n);
+    rowsEl.appendChild(li);
+  });
+
+  /* filtering */
+  var msgEl = dash.querySelector('.msg');
+  var clearBtn = dash.querySelector('.clear');
+  var state = { type: null, value: null };
+
+  function render(scroll) {
+    var shown = 0;
+    var label = '';
+    groups.forEach(function (g) {
+      var isBooks = g.key === 'books';
+      var inGroup = 0;
+      g.items.forEach(function (li) {
+        var ok;
+        if (!state.type) { ok = true; }
+        else if (isBooks) { ok = false; }
+        else if (state.type === 'year') { ok = yearOf(li) === state.value; }
+        else { ok = g.key === state.value; }
+        li.hidden = !ok;
+        if (ok) { inGroup++; if (!isBooks) { shown++; } }
+      });
+      g.head.hidden = !inGroup;
+      g.list.hidden = !inGroup;
+      g.badge.textContent = state.type ? inGroup : g.items.length;
+    });
+    if (allNote) { allNote.hidden = !!state.type; }
+
+    if (state.type === 'year') { label = state.value; }
+    if (state.type === 'topic') {
+      paperGroups.forEach(function (g) { if (g.key === state.value) { label = g.label; } });
+    }
+
+    slice(dash.querySelectorAll('.bar')).forEach(function (b) {
+      b.setAttribute('aria-pressed', String(state.type === 'year' && b.getAttribute('data-year') === state.value));
+    });
+    slice(rowsEl.children).forEach(function (li) {
+      li.classList.toggle('sel', state.type === 'topic' && li.getAttribute('data-topic') === state.value);
+    });
+
+    msgEl.textContent = state.type
+      ? fmt(dash.getAttribute('data-msg-filter'), { n: shown, total: total, label: label })
+      : fmt(dash.getAttribute('data-msg-all'), { n: total, total: total, label: '' });
+    clearBtn.hidden = !state.type;
+
+    if (scroll && state.type) { papersSec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  }
+
+  function toggle(type, value) {
+    if (state.type === type && state.value === value) { state = { type: null, value: null }; render(false); }
+    else { state = { type: type, value: value }; render(true); }
+  }
+
+  barsEl.addEventListener('click', function (e) {
+    var b = e.target.closest('.bar');
+    if (b) { toggle('year', b.getAttribute('data-year')); }
+  });
+  rowsEl.addEventListener('click', function (e) {
+    var lab = e.target.closest('.lab');
+    if (lab) { toggle('topic', lab.parentNode.getAttribute('data-topic')); }
+  });
+  clearBtn.addEventListener('click', function () {
+    state = { type: null, value: null };
+    render(false);
+  });
+
+  /* tooltip on the year bars */
+  barsEl.addEventListener('mouseover', function (e) {
+    var b = e.target.closest('.bar');
+    if (!b) return;
+    var y = b.getAttribute('data-year');
+    tipEl.textContent = fmt(dash.getAttribute('data-tip'), { n: years[y], label: y });
+    var r = b.getBoundingClientRect();
+    var host = dash.querySelector('.chart').getBoundingClientRect();
+    tipEl.style.left = (r.left - host.left + r.width / 2) + 'px';
+    tipEl.style.top = (r.top - host.top - 30) + 'px';
+    tipEl.classList.add('on');
+  });
+  barsEl.addEventListener('mouseleave', function () { tipEl.classList.remove('on'); });
+
+  /* view tabs */
+  slice(dash.querySelectorAll('.dash-tabs button')).forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var view = btn.getAttribute('data-view');
+      slice(dash.querySelectorAll('.dash-tabs button')).forEach(function (b) {
+        b.setAttribute('aria-selected', String(b === btn));
+      });
+      slice(dash.querySelectorAll('[data-panel]')).forEach(function (p) {
+        p.hidden = p.getAttribute('data-panel') !== view;
+      });
+    });
+  });
+
+  render(false);
+  dash.classList.add('on');
+})();
+</script>
 </body>
 </html>
