@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /
+# Theme-generated listing pages (authors, tags, publication types) are not useful search results
+Disallow: /authors/
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /publication_types/
+Disallow: /publication/
+Disallow: /publications/
+Disallow: /experience/
 
 Sitemap: {{ "sitemap.xml" | absURL }}
 Sitemap: {{ "sitemap-papers.xml" | absURL }}

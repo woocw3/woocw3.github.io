@@ -13,6 +13,7 @@ Every published paper has a summary page carrying its abstract, full
 bibliographic data, and citation formats.
 
 
+<!-- GEN:LLMS -->
 ### Carbon, climate & environment
 
 - [Does the EU Carbon Border Adjustment Mechanism (CBAM) Affect Korean Firms' Stock Prices?](https://chungwonwoo.com/papers/cbam-korea-2024.html): Review of Accounting and Policy Studies, 2024.
@@ -72,6 +73,8 @@ bibliographic data, and citation formats.
 - [How Do Organizational Factors Influence Performance through Performance Management System as Innovation?](https://chungwonwoo.com/papers/organizational-factors-performance-management-2021.html): Review of Accounting and Policy Studies, 2021.
 - [CSR 활동이 벤처기업의 경영성과에 미치는 영향: 기업의 성장단계를 구분하여](https://chungwonwoo.com/papers/csr-venture-firm-performance-2020.html): 벤처창업연구, 2020.
 - [CSR, social ties and firm performance](https://chungwonwoo.com/papers/csr-social-ties-firm-performance-2019.html): Corporate Governance: The International Journal of Business in Society, 2019.
+
+<!-- /GEN:LLMS -->
 
 ## Profiles
 
