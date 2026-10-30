@@ -2,7 +2,7 @@
 // Refresh data/metrics.json from the public Google Scholar profile.
 // Google Scholar often blocks cloud IPs (GitHub Actions); in that case the
 // cached values are kept and the script exits 0 so the build still runs.
-// A weekly Aside routine on the owner's PC runs this and pushes the result.
+// The daily scheduled build runs this; commit data/metrics.json now and then to refresh the cache.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

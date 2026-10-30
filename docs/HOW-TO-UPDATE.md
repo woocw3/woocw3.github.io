@@ -23,7 +23,7 @@
 
 | 항목 | 주기 | 방법 |
 |---|---|---|
-| 피인용 수·h-index | 매주 (Aside 정기 작업) + 매일 빌드 | `scripts/fetch-metrics.mjs`가 Google Scholar에서 읽어 `data/metrics.json` 갱신 |
+| 피인용 수·h-index | 매일 06:30 빌드 | `scripts/fetch-metrics.mjs`가 Google Scholar에서 읽어 반영. 접속이 막히면 `data/metrics.json` 값 사용 (가끔 로컬에서 실행해 커밋하면 캐시가 최신으로 유지됨) |
 | 최신 영상 | 매일 06:30 빌드 | 유튜브 채널 RSS. 수업 녹화본(날짜·주차 제목)은 자동 제외. 공개 영상이 없으면 섹션이 숨겨짐 |
 | 검색엔진 통보 | push할 때마다 | `scripts/indexnow.mjs` |
 | NAS 백업 | 매일 21:00 (Aside 정기 작업) | `SynologyDrive\3. project\website-backup` |
