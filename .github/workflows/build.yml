@@ -85,6 +85,13 @@ jobs:
           pnpm install --no-frozen-lockfile || npm install
         fi
 
+    - name: Refresh metrics, videos and generated paper pages
+      # Paper lists, counts, sitemap-papers.xml and new summary pages come from static/woo-publications.bib.
+      # Google Scholar may block CI runners; cached data/metrics.json is used then.
+      run: |
+        node scripts/fetch-metrics.mjs || true
+        node scripts/build-site.mjs
+
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v3
       with:

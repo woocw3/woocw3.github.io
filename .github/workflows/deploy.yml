@@ -6,6 +6,9 @@ on:
     branches: ['main']
   # Allows you to run this workflow manually from the Actions tab on GitHub
   workflow_dispatch:
+  # Daily rebuild (06:30 KST) so citation metrics and the latest YouTube videos stay current
+  schedule:
+    - cron: '30 21 * * *'
 
 # Provide permission to clone the repo and deploy it to GitHub Pages
 permissions:
@@ -81,3 +84,24 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
+
+  # Tell search engines (Bing, Naver, Yandex via IndexNow) about pages changed in this push
+  indexnow:
+    needs: deploy
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Setup Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: '20'
+    - name: Notify IndexNow
+      run: |
+        node scripts/build-site.mjs --offline > /dev/null
+        node scripts/indexnow.mjs "${{ github.event.before }}"

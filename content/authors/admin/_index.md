@@ -57,7 +57,7 @@ Before joining Changwon National University in November 2024, I served as Assist
 
 ## Research Impact
 
-With 39+ peer-reviewed publications (1,450+ citations, h-index 17) in leading international journals including *Technology Analysis & Strategic Management*, *Journal of Cleaner Production*, *Sustainable Development*, and *Korean Accounting Review*, my research contributes to understanding:
+With 42 peer-reviewed publications (1,450+ citations, h-index 17) in leading international journals including *Technology Analysis & Strategic Management*, *Journal of Cleaner Production*, *Sustainable Development*, and *Korean Accounting Review*, my research contributes to understanding:
 
 - How firms invest in and disclose cybersecurity initiatives
 - The relationship between ESG performance and corporate innovation

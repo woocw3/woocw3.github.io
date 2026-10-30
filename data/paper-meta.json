@@ -1,0 +1,620 @@
+{
+  "topics": {
+    "en": [
+      {
+        "topic": "carbon",
+        "label": "Carbon, climate & environment"
+      },
+      {
+        "topic": "innovation",
+        "label": "Innovation, R&D & cost behavior"
+      },
+      {
+        "topic": "energy",
+        "label": "Energy & environmental policy"
+      },
+      {
+        "topic": "policy",
+        "label": "Science & technology policy evaluation"
+      },
+      {
+        "topic": "it",
+        "label": "IT, information security & digital"
+      },
+      {
+        "topic": "esg",
+        "label": "ESG, CSR & social enterprise"
+      },
+      {
+        "topic": "books",
+        "label": "Books (co-authored)"
+      }
+    ],
+    "ko": [
+      {
+        "topic": "carbon",
+        "label": "탄소·기후·환경"
+      },
+      {
+        "topic": "innovation",
+        "label": "혁신·R&D·원가행태"
+      },
+      {
+        "topic": "energy",
+        "label": "에너지·환경정책"
+      },
+      {
+        "topic": "policy",
+        "label": "과학기술정책 평가"
+      },
+      {
+        "topic": "it",
+        "label": "IT·정보보안·디지털"
+      },
+      {
+        "topic": "esg",
+        "label": "ESG·CSR·사회적기업"
+      },
+      {
+        "topic": "books",
+        "label": "저서 (공저)"
+      }
+    ],
+    "index": [
+      "Carbon, climate & environment",
+      "Innovation, R&D & cost behavior",
+      "Energy & environmental policy",
+      "Science & technology policy evaluation",
+      "IT, information security & digital",
+      "ESG, CSR & social enterprise"
+    ]
+  },
+  "papers": {
+    "woo2024empirical": {
+      "slug": "cbam-korea-2024",
+      "topic": "carbon",
+      "order": 0,
+      "display_en": "Does the EU Carbon Border Adjustment Mechanism (CBAM) Affect Korean Firms' Stock Prices?",
+      "in_korean": false,
+      "journal_en": "Review of Accounting and Policy Studies",
+      "display_ko": "Does the EU Carbon Border Adjustment Mechanism (CBAM) Affect Korean Firms' Stock Prices?",
+      "journal_ko": "회계와정책연구",
+      "index_title": "Does the EU Carbon Border Adjustment Mechanism (CBAM) Affect Korean Firms' Stock Prices?",
+      "index_journal": "Review of Accounting and Policy Studies",
+      "year": "2024"
+    },
+    "woo2024does": {
+      "slug": "climate-exposure-2024",
+      "topic": "carbon",
+      "order": 1,
+      "display_en": "Does Climate Change Exposure Hurt Corporate Financial and Energy Performance?",
+      "in_korean": false,
+      "journal_en": "Journal of Cleaner Production",
+      "display_ko": "Does Climate Change Exposure Hurt Corporate Financial and Energy Performance?",
+      "journal_ko": "Journal of Cleaner Production",
+      "index_title": "Does Climate Change Exposure Hurt Corporate Financial and Energy Performance?",
+      "index_journal": "Journal of Cleaner Production",
+      "year": "2024"
+    },
+    "woo2024paper": {
+      "slug": "supplier-cogs-environmental-2024",
+      "topic": "carbon",
+      "order": 2,
+      "display_en": "Do Cost-Squeezed Suppliers Give Up on Green?",
+      "in_korean": false,
+      "journal_en": "Review of Accounting and Policy Studies",
+      "display_ko": "Do Cost-Squeezed Suppliers Give Up on Green?",
+      "journal_ko": "회계와정책연구",
+      "index_title": "Do Cost-Squeezed Suppliers Give Up on Green?",
+      "index_journal": "Review of Accounting and Policy Studies",
+      "year": "2024"
+    },
+    "woo2023paper": {
+      "slug": "carbon-risk-audit-fees-2023",
+      "topic": "carbon",
+      "order": 3,
+      "display_en": "Does Carbon Risk Increase Audit Hours and Audit Fees?",
+      "in_korean": false,
+      "journal_en": "Korea International Accounting Review",
+      "display_ko": "Does Carbon Risk Increase Audit Hours and Audit Fees?",
+      "journal_ko": "Korea International Accounting Review",
+      "index_title": "Does Carbon Risk Increase Audit Hours and Audit Fees?",
+      "index_journal": "Korea International Accounting Review",
+      "year": "2023"
+    },
+    "woo2016suppliers": {
+      "slug": "supplier-communication-green-integration-2016",
+      "topic": "carbon",
+      "order": 4,
+      "display_en": "Suppliers' communication capability and external green integration for green and financial performance in Korean construction industry",
+      "in_korean": false,
+      "journal_en": "Journal of Cleaner Production",
+      "display_ko": "Suppliers' communication capability and external green integration for green and financial performance in Korean construction industry",
+      "journal_ko": "Journal of Cleaner Production",
+      "index_title": "Suppliers' communication capability and external green integration for green and financial performance in Korean construction industry",
+      "index_journal": "Journal of Cleaner Production",
+      "year": "2016"
+    },
+    "woo2016environmental": {
+      "slug": "supplier-environmental-capabilities-gscm-2016",
+      "topic": "carbon",
+      "order": 5,
+      "display_en": "Environmental Capabilities of Suppliers for Green Supply Chain Management in Construction Projects: A Case Study in Korea",
+      "in_korean": false,
+      "journal_en": "Sustainability",
+      "display_ko": "Environmental Capabilities of Suppliers for Green Supply Chain Management in Construction Projects: A Case Study in Korea",
+      "journal_ko": "Sustainability",
+      "index_title": "Environmental Capabilities of Suppliers for Green Supply Chain Management in Construction Projects: A Case Study in Korea",
+      "index_journal": "Sustainability",
+      "year": "2016"
+    },
+    "woo2015static": {
+      "slug": "renewable-energy-environmental-efficiency-2015",
+      "topic": "carbon",
+      "order": 6,
+      "display_en": "The static and dynamic environmental efficiency of renewable energy: A Malmquist index analysis of OECD countries",
+      "in_korean": false,
+      "journal_en": "Renewable and Sustainable Energy Reviews",
+      "display_ko": "The static and dynamic environmental efficiency of renewable energy: A Malmquist index analysis of OECD countries",
+      "journal_ko": "Renewable and Sustainable Energy Reviews",
+      "index_title": "The static and dynamic environmental efficiency of renewable energy: A Malmquist index analysis of OECD countries",
+      "index_journal": "Renewable and Sustainable Energy Reviews",
+      "year": "2015"
+    },
+    "woo2014impact": {
+      "slug": "green-innovation-labor-productivity-2014",
+      "topic": "carbon",
+      "order": 7,
+      "display_en": "Impact of Green Innovation on Labor Productivity and its Determinants: an Analysis of the Korean Manufacturing Industry",
+      "in_korean": false,
+      "journal_en": "Business Strategy and the Environment",
+      "display_ko": "Impact of Green Innovation on Labor Productivity and its Determinants: an Analysis of the Korean Manufacturing Industry",
+      "journal_ko": "Business Strategy and the Environment",
+      "index_title": "Impact of Green Innovation on Labor Productivity and its Determinants: an Analysis of the Korean Manufacturing Industry",
+      "index_journal": "Business Strategy and the Environment",
+      "year": "2014"
+    },
+    "woo2014exploring": {
+      "slug": "complementary-assets-environmental-performance-2014",
+      "topic": "carbon",
+      "order": 8,
+      "display_en": "Exploring the Impact of Complementary Assets on the Environmental Performance in Manufacturing SMEs",
+      "in_korean": false,
+      "journal_en": "Sustainability",
+      "display_ko": "Exploring the Impact of Complementary Assets on the Environmental Performance in Manufacturing SMEs",
+      "journal_ko": "Sustainability",
+      "index_title": "Exploring the Impact of Complementary Assets on the Environmental Performance in Manufacturing SMEs",
+      "index_journal": "Sustainability",
+      "year": "2014"
+    },
+    "woo2026paper": {
+      "slug": "performance-pay-differentiation-innovation-2026",
+      "topic": "innovation",
+      "order": 100,
+      "display_en": "The Effect of Performance-Pay Differentiation on Firm Innovation Performance: An Analysis by Innovation Process Stage",
+      "in_korean": true,
+      "journal_en": "Journal of Innovative Enterprise",
+      "display_ko": "성과보상차등이 기업 혁신성과에 미치는 영향: 혁신 프로세스 단계별 분석",
+      "journal_ko": "혁신기업연구",
+      "index_title": "성과보상차등이 기업 혁신성과에 미치는 영향: 혁신 프로세스 단계별 분석",
+      "index_journal": "혁신기업연구",
+      "year": "2026"
+    },
+    "woo2024predicting": {
+      "slug": "ict-innovation-machine-learning-2024",
+      "topic": "innovation",
+      "order": 101,
+      "display_en": "Can Machine Learning Predict ICT Business-Process Innovation?",
+      "in_korean": false,
+      "journal_en": "Technology Analysis & Strategic Management",
+      "display_ko": "Can Machine Learning Predict ICT Business-Process Innovation?",
+      "journal_ko": "Technology Analysis & Strategic Management",
+      "index_title": "Can Machine Learning Predict ICT Business-Process Innovation?",
+      "index_journal": "Technology Analysis & Strategic Management",
+      "year": "2024"
+    },
+    "woo2024external": {
+      "slug": "external-risk-country-rd-efficiency-2024",
+      "topic": "innovation",
+      "order": 102,
+      "display_en": "Do external risk factors increase or decrease country-level R&D efficiency: focused on air pollution and job insecurity?",
+      "in_korean": false,
+      "journal_en": "Technology Analysis & Strategic Management",
+      "display_ko": "Do external risk factors increase or decrease country-level R&D efficiency: focused on air pollution and job insecurity?",
+      "journal_ko": "Technology Analysis & Strategic Management",
+      "index_title": "Do external risk factors increase or decrease country-level R&D efficiency: focused on air pollution and job insecurity?",
+      "index_journal": "Technology Analysis & Strategic Management",
+      "year": "2024"
+    },
+    "woo2023does": {
+      "slug": "openness-innovation-appropriability-2023",
+      "topic": "innovation",
+      "order": 103,
+      "display_en": "Does Openness Enable or Hinder Innovation Performance?",
+      "in_korean": false,
+      "journal_en": "Technology Analysis & Strategic Management",
+      "display_ko": "Does Openness Enable or Hinder Innovation Performance?",
+      "journal_ko": "Technology Analysis & Strategic Management",
+      "index_title": "Does Openness Enable or Hinder Innovation Performance?",
+      "index_journal": "Technology Analysis & Strategic Management",
+      "year": "2023"
+    },
+    "woo2022innovation": {
+      "slug": "innovation-cost-stickiness-2022",
+      "topic": "innovation",
+      "order": 104,
+      "display_en": "Do Innovating Firms Have Stickier Costs?",
+      "in_korean": false,
+      "journal_en": "Korean Accounting Review",
+      "display_ko": "Do Innovating Firms Have Stickier Costs?",
+      "journal_ko": "Korean Accounting Review",
+      "index_title": "Do Innovating Firms Have Stickier Costs?",
+      "index_journal": "Korean Accounting Review",
+      "year": "2022"
+    },
+    "woo2022paper": {
+      "slug": "machine-learning-innovation-prediction-2022",
+      "topic": "innovation",
+      "order": 105,
+      "display_en": "Predicting Innovation Performance and Analyzing Variable Importance Using Machine Learning",
+      "in_korean": true,
+      "journal_en": "Korean Business Education Review",
+      "display_ko": "기계학습을 활용한 혁신성과 예측 및 변수 중요도 분석",
+      "journal_ko": "경영교육연구",
+      "index_title": "기계학습을 활용한 혁신성과 예측 및 변수 중요도 분석",
+      "index_journal": "경영교육연구",
+      "year": "2022"
+    },
+    "woo2021choice": {
+      "slug": "rd-strategy-cost-stickiness-2021",
+      "topic": "innovation",
+      "order": 106,
+      "display_en": "Does R&D Investment Make Costs Sticky?",
+      "in_korean": false,
+      "journal_en": "Technology Analysis & Strategic Management",
+      "display_ko": "Does R&D Investment Make Costs Sticky?",
+      "journal_ko": "Technology Analysis & Strategic Management",
+      "index_title": "Does R&D Investment Make Costs Sticky?",
+      "index_journal": "Technology Analysis & Strategic Management",
+      "year": "2021"
+    },
+    "woo2021gender": {
+      "slug": "gender-equality-worklife-innovation-2021",
+      "topic": "innovation",
+      "order": 107,
+      "display_en": "Do gender equality and work–life balance matter for innovation performance?",
+      "in_korean": false,
+      "journal_en": "Technology Analysis & Strategic Management",
+      "display_ko": "Do gender equality and work–life balance matter for innovation performance?",
+      "journal_ko": "Technology Analysis & Strategic Management",
+      "index_title": "Do gender equality and work–life balance matter for innovation performance?",
+      "index_journal": "Technology Analysis & Strategic Management",
+      "year": "2021"
+    },
+    "woo2021paper2": {
+      "slug": "smart-mobility-cost-efficiency-2021",
+      "topic": "innovation",
+      "order": 108,
+      "display_en": "Cost Efficiency of Smart Mobility Firms: Focusing on Autonomous Vehicle and Drone Companies",
+      "in_korean": true,
+      "journal_en": "Korean Business Education Review",
+      "display_ko": "스마트이동체 기업의 원가효율성 분석: 자율주행차, 드론 기업을 중심으로",
+      "journal_ko": "경영교육연구",
+      "index_title": "스마트이동체 기업의 원가효율성 분석: 자율주행차, 드론 기업을 중심으로",
+      "index_journal": "경영교육연구",
+      "year": "2021"
+    },
+    "woo2020deregulation": {
+      "slug": "deregulation-public-rd-support-2020",
+      "topic": "innovation",
+      "order": 109,
+      "display_en": "How deregulation moderates the effect of public R&D support?",
+      "in_korean": false,
+      "journal_en": "Technology Analysis & Strategic Management",
+      "display_ko": "How deregulation moderates the effect of public R&D support?",
+      "journal_ko": "Technology Analysis & Strategic Management",
+      "index_title": "How deregulation moderates the effect of public R&D support?",
+      "index_journal": "Technology Analysis & Strategic Management",
+      "year": "2020"
+    },
+    "woo2016appropriability": {
+      "slug": "sme-appropriability-capacity-2016",
+      "topic": "innovation",
+      "order": 110,
+      "display_en": "SME’s Appropriability regime for Sustainable Development-the Role of Absorptive Capacity and Inventive Capacity",
+      "in_korean": false,
+      "journal_en": "Sustainability",
+      "display_ko": "SME’s Appropriability regime for Sustainable Development-the Role of Absorptive Capacity and Inventive Capacity",
+      "journal_ko": "Sustainability",
+      "index_title": "SME’s Appropriability regime for Sustainable Development-the Role of Absorptive Capacity and Inventive Capacity",
+      "index_journal": "Sustainability",
+      "year": "2016"
+    },
+    "woo2016paper2": {
+      "slug": "cost-management-rd-efficiency-2016",
+      "topic": "innovation",
+      "order": 111,
+      "display_en": "The Effect of Cost Management on In-House R&D Efficiency",
+      "in_korean": true,
+      "journal_en": "Korean Management Accounting Research",
+      "display_ko": "원가관리가 기업내부 연구개발 효율성에 미치는 영향",
+      "journal_ko": "관리회계연구",
+      "index_title": "원가관리가 기업내부 연구개발 효율성에 미치는 영향",
+      "index_journal": "관리회계연구",
+      "year": "2016"
+    },
+    "woo2015value": {
+      "slug": "value-capture-rd-productivity-2015",
+      "topic": "innovation",
+      "order": 112,
+      "display_en": "Value capture mechanism: R & D productivity comparison of SMEs",
+      "in_korean": false,
+      "journal_en": "Management Decision",
+      "display_ko": "Value capture mechanism: R & D productivity comparison of SMEs",
+      "journal_ko": "Management Decision",
+      "index_title": "Value capture mechanism: R & D productivity comparison of SMEs",
+      "index_journal": "Management Decision",
+      "year": "2015"
+    },
+    "woo2015labor": {
+      "slug": "labor-union-innovation-productivity-2015",
+      "topic": "innovation",
+      "order": 113,
+      "display_en": "Labor Union Effects on Innovation and Commercialization Productivity: An Integrated Propensity Score Matching and Two-Stage Data Envelopment Analysis",
+      "in_korean": false,
+      "journal_en": "Sustainability",
+      "display_ko": "Labor Union Effects on Innovation and Commercialization Productivity: An Integrated Propensity Score Matching and Two-Stage Data Envelopment Analysis",
+      "journal_ko": "Sustainability",
+      "index_title": "Labor Union Effects on Innovation and Commercialization Productivity: An Integrated Propensity Score Matching and Two-Stage Data Envelopment Analysis",
+      "index_journal": "Sustainability",
+      "year": "2015"
+    },
+    "woo2023performance": {
+      "slug": "renewable-energy-rd-performance-2023",
+      "topic": "energy",
+      "order": 200,
+      "display_en": "R&D performance and relevant factors of renewable energy projects: separating innovation and economic perspectives",
+      "in_korean": false,
+      "journal_en": "International Journal of Environmental Science and Technology",
+      "display_ko": "R&D performance and relevant factors of renewable energy projects: separating innovation and economic perspectives",
+      "journal_ko": "International Journal of Environmental Science and Technology",
+      "index_title": "R&D performance and relevant factors of renewable energy projects: separating innovation and economic perspectives",
+      "index_journal": "International Journal of Environmental Science and Technology",
+      "year": "2023"
+    },
+    "woo2019paper": {
+      "slug": "clean-energy-rd-efficiency-dea-2019",
+      "topic": "energy",
+      "order": 201,
+      "display_en": "R&D Efficiency of Clean Energy Technologies Using DEA: Evidence from Renewable Energy R&D Projects",
+      "in_korean": true,
+      "journal_en": "Journal of Korea Technology Innovation Society",
+      "display_ko": "DEA를 이용한 청정에너지기술 R&D 효율성 분석 : 신재생에너지기술 R&D과제를 대상으로",
+      "journal_ko": "기술혁신학회지",
+      "index_title": "DEA를 이용한 청정에너지기술 R&D 효율성 분석 : 신재생에너지기술 R&D과제를 대상으로",
+      "index_journal": "기술혁신학회지",
+      "year": "2019"
+    },
+    "woo2016influencing": {
+      "slug": "hydrogen-rd-expost-evaluation-2016",
+      "topic": "energy",
+      "order": 202,
+      "display_en": "Influencing factors on hydrogen energy R&D projects: An ex-post performance evaluation",
+      "in_korean": false,
+      "journal_en": "Renewable and Sustainable Energy Reviews",
+      "display_ko": "Influencing factors on hydrogen energy R&D projects: An ex-post performance evaluation",
+      "journal_ko": "Renewable and Sustainable Energy Reviews",
+      "index_title": "Influencing factors on hydrogen energy R&D projects: An ex-post performance evaluation",
+      "index_journal": "Renewable and Sustainable Energy Reviews",
+      "year": "2016"
+    },
+    "woo2015scenario": {
+      "slug": "photovoltaic-learning-curve-2015",
+      "topic": "energy",
+      "order": 203,
+      "display_en": "Scenario analysis for estimating the learning rate of photovoltaic power generation based on learning curve theory in South Korea",
+      "in_korean": false,
+      "journal_en": "Energy",
+      "display_ko": "Scenario analysis for estimating the learning rate of photovoltaic power generation based on learning curve theory in South Korea",
+      "journal_ko": "Energy",
+      "index_title": "Scenario analysis for estimating the learning rate of photovoltaic power generation based on learning curve theory in South Korea",
+      "index_journal": "Energy",
+      "year": "2015"
+    },
+    "woo2014role": {
+      "slug": "hydrogen-economy-input-output-2014",
+      "topic": "energy",
+      "order": 204,
+      "display_en": "The role of hydrogen energy development in the Korean economy: An input–output analysis",
+      "in_korean": false,
+      "journal_en": "International Journal of Hydrogen Energy",
+      "display_ko": "The role of hydrogen energy development in the Korean economy: An input–output analysis",
+      "journal_ko": "International Journal of Hydrogen Energy",
+      "index_title": "The role of hydrogen energy development in the Korean economy: An input–output analysis",
+      "index_journal": "International Journal of Hydrogen Energy",
+      "year": "2014"
+    },
+    "woo2021paper": {
+      "slug": "policy-instruments-rd-efficiency-2021",
+      "topic": "policy",
+      "order": 300,
+      "display_en": "Comparing Firm Performance across Policy Instruments: Focusing on R&D Efficiency",
+      "in_korean": true,
+      "journal_en": "Review of Accounting and Policy Studies",
+      "display_ko": "정책수단별 기업 성과 비교 연구 ：R&D 효율성을 중심으로",
+      "journal_ko": "회계와정책연구",
+      "index_title": "정책수단별 기업 성과 비교 연구 ：R&D 효율성을 중심으로",
+      "index_journal": "회계와정책연구",
+      "year": "2021"
+    },
+    "woo2019paper2": {
+      "slug": "materials-components-rd-cooperation-2019",
+      "topic": "policy",
+      "order": 301,
+      "display_en": "Effects of the Performing Institution and Cooperation Type on R&D Efficiency in Materials and Components",
+      "in_korean": true,
+      "journal_en": "Journal of Technology Innovation",
+      "display_ko": "연구개발 수행기관 및 협력유형이 소재부품 R&D 효율성에 미치는 영향",
+      "journal_ko": "기술혁신연구",
+      "index_title": "연구개발 수행기관 및 협력유형이 소재부품 R&D 효율성에 미치는 영향",
+      "index_journal": "기술혁신연구",
+      "year": "2019"
+    },
+    "woo2018paper": {
+      "slug": "policy-mix-rd-efficiency-2018",
+      "topic": "policy",
+      "order": 302,
+      "display_en": "The Effect of the Science and Technology Policy Mix on R&D Efficiency",
+      "in_korean": true,
+      "journal_en": "Journal of Korea Technology Innovation Society",
+      "display_ko": "과학기술정책조합이 R&D효율성에 미치는 영향 분석",
+      "journal_ko": "기술혁신학회지",
+      "index_title": "과학기술정책조합이 R&D효율성에 미치는 영향 분석",
+      "index_journal": "기술혁신학회지",
+      "year": "2018"
+    },
+    "woo2017paper": {
+      "slug": "government-institute-convergence-research-2017",
+      "topic": "policy",
+      "order": 303,
+      "display_en": "Performance Analysis of Collaborative Convergence Research at Government-Funded Research Institutes",
+      "in_korean": true,
+      "journal_en": "Journal of Korea Technology Innovation Society",
+      "display_ko": "국가 출연연구소의 협업적 융합연구 성과 분석",
+      "journal_ko": "기술혁신학회지",
+      "index_title": "국가 출연연구소의 협업적 융합연구 성과 분석",
+      "index_journal": "기술혁신학회지",
+      "year": "2017"
+    },
+    "woo2016paper": {
+      "slug": "daedeok-innopolis-psm-2016",
+      "topic": "policy",
+      "order": 304,
+      "display_en": "Performance Analysis of Support Programs in Daedeok Innopolis: A Propensity Score Matching Approach",
+      "in_korean": true,
+      "journal_en": "Korean Business Education Review",
+      "display_ko": "대덕연구개발특구의 지원사업 성과분석:성향점수매칭(PSM) 방법을 중심으로",
+      "journal_ko": "경영교육연구",
+      "index_title": "대덕연구개발특구의 지원사업 성과분석:성향점수매칭(PSM) 방법을 중심으로",
+      "index_journal": "경영교육연구",
+      "year": "2016"
+    },
+    "woo2026paper2": {
+      "slug": "it-security-investment-firm-value-2026",
+      "topic": "it",
+      "order": 400,
+      "display_en": "How Much IT Investment Is Too Much?",
+      "in_korean": false,
+      "journal_en": "Review of Accounting and Policy Studies",
+      "display_ko": "How Much IT Investment Is Too Much?",
+      "journal_ko": "회계와정책연구",
+      "index_title": "How Much IT Investment Is Too Much?",
+      "index_journal": "Review of Accounting and Policy Studies",
+      "year": "2026"
+    },
+    "woo2025paper": {
+      "slug": "it-investment-cost-efficiency-2025",
+      "topic": "it",
+      "order": 401,
+      "display_en": "Does IT Investment Improve Cost Efficiency?",
+      "in_korean": false,
+      "journal_en": "Korean Business Education Review",
+      "display_ko": "Does IT Investment Improve Cost Efficiency?",
+      "journal_ko": "경영교육연구",
+      "index_title": "Does IT Investment Improve Cost Efficiency?",
+      "index_journal": "Korean Business Education Review",
+      "year": "2025"
+    },
+    "woo2023exploring": {
+      "slug": "blockchain-research-data-management-2023",
+      "topic": "it",
+      "order": 402,
+      "display_en": "Exploring the Determinants of Blockchain Acceptance for Research Data Management",
+      "in_korean": false,
+      "journal_en": "Journal of Computer Information Systems",
+      "display_ko": "Exploring the Determinants of Blockchain Acceptance for Research Data Management",
+      "journal_ko": "Journal of Computer Information Systems",
+      "index_title": "Exploring the Determinants of Blockchain Acceptance for Research Data Management",
+      "index_journal": "Journal of Computer Information Systems",
+      "year": "2023"
+    },
+    "woo2025balance": {
+      "slug": "esg-balance-innovation-performance-2025",
+      "topic": "esg",
+      "order": 500,
+      "display_en": "Is ESG balance beneficial for the relationship between innovation and corporate financial performance?",
+      "in_korean": false,
+      "journal_en": "Journal of Innovative Enterprise",
+      "display_ko": "Is ESG balance beneficial for the relationship between innovation and corporate financial performance?",
+      "journal_ko": "혁신기업연구",
+      "index_title": "Is ESG balance beneficial for the relationship between innovation and corporate financial performance?",
+      "index_journal": "혁신기업연구",
+      "year": "2025"
+    },
+    "woo2025social": {
+      "slug": "social-enterprise-sustainability-2025",
+      "topic": "esg",
+      "order": 501,
+      "display_en": "Can Social Enterprises Be Sustainable Through Innovation and Social Performance-Based Incentives?",
+      "in_korean": false,
+      "journal_en": "Sustainable Development",
+      "display_ko": "Can Social Enterprises Be Sustainable Through Innovation and Social Performance-Based Incentives?",
+      "journal_ko": "Sustainable Development",
+      "index_title": "Can Social Enterprises Be Sustainable Through Innovation and Social Performance-Based Incentives?",
+      "index_journal": "Sustainable Development",
+      "year": "2025"
+    },
+    "woo2022paper2": {
+      "slug": "seasoned-equity-offering-leverage-2022",
+      "topic": "esg",
+      "order": 502,
+      "display_en": "An Empirical Study on the Announcement Effect of Seasoned Equity Offerings and Its Relation to Operating and Financial Leverage",
+      "in_korean": true,
+      "journal_en": "Review of Accounting and Policy Studies",
+      "display_ko": "유상증자의 공시효과와 영업재무레버리지의 관계에 관한 실증연구",
+      "journal_ko": "회계와정책연구",
+      "index_title": "유상증자의 공시효과와 영업재무레버리지의 관계에 관한 실증연구",
+      "index_journal": "회계와정책연구",
+      "year": "2022"
+    },
+    "woo2021organizational": {
+      "slug": "organizational-factors-performance-management-2021",
+      "topic": "esg",
+      "order": 503,
+      "display_en": "How Do Organizational Factors Influence Performance through Performance Management System as Innovation?",
+      "in_korean": false,
+      "journal_en": "Review of Accounting and Policy Studies",
+      "display_ko": "How Do Organizational Factors Influence Performance through Performance Management System as Innovation?",
+      "journal_ko": "회계와정책연구",
+      "index_title": "How Do Organizational Factors Influence Performance through Performance Management System as Innovation?",
+      "index_journal": "Review of Accounting and Policy Studies",
+      "year": "2021"
+    },
+    "woo2020paper": {
+      "slug": "csr-venture-firm-performance-2020",
+      "topic": "esg",
+      "order": 504,
+      "display_en": "The Effect of CSR Activities on Venture Firm Performance by Growth Stage",
+      "in_korean": true,
+      "journal_en": "Asia-Pacific Journal of Business Venturing and Entrepreneurship",
+      "display_ko": "CSR 활동이 벤처기업의 경영성과에 미치는 영향: 기업의 성장단계를 구분하여",
+      "journal_ko": "벤처창업연구",
+      "index_title": "CSR 활동이 벤처기업의 경영성과에 미치는 영향: 기업의 성장단계를 구분하여",
+      "index_journal": "벤처창업연구",
+      "year": "2020"
+    },
+    "woo2019social": {
+      "slug": "csr-social-ties-firm-performance-2019",
+      "topic": "esg",
+      "order": 505,
+      "display_en": "CSR, social ties and firm performance",
+      "in_korean": false,
+      "journal_en": "Corporate Governance: The International Journal of Business in Society",
+      "display_ko": "CSR, social ties and firm performance",
+      "journal_ko": "Corporate Governance: The International Journal of Business in Society",
+      "index_title": "CSR, social ties and firm performance",
+      "index_journal": "Corporate Governance: The International Journal of Business in Society",
+      "year": "2019"
+    }
+  }
+}

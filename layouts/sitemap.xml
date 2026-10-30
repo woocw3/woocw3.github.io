@@ -1,0 +1,12 @@
+{{- /* Only list pages worth finding in search: the home page and posts in content sections
+       (blog, teaching). Paper summaries live in /sitemap-papers.xml. */ -}}
+{{- $sections := slice "blog" "teaching" -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ site.Home.Permalink }}</loc>{{ with site.Home.Lastmod }}{{ if not .IsZero }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}{{ end }}<changefreq>weekly</changefreq><priority>1.0</priority></url>
+  {{- range site.RegularPages }}
+  {{- if and (in $sections .Section) (not .Draft) (not .Params.private) }}
+  <url><loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>{{ end }}<changefreq>monthly</changefreq><priority>0.7</priority></url>
+  {{- end }}
+  {{- end }}
+</urlset>
