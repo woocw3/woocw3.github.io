@@ -37,5 +37,5 @@ node scripts/build-site.mjs      # 목록·색인·페이지 재생성 (--offlin
 
 ## 정리된 것
 
-- Hugo Blox가 자동으로 만들던 `/publication/` 101건과 저자·태그 페이지는 삭제/검색 제외. 원본 110건 목록은 `data/archive/all-publications-2026-10.bib`에 보관.
+- Hugo Blox가 자동으로 만들던 `/publication/` 101건과 저자·태그 페이지는 삭제/검색 제외. 원본 110건 목록은 `archive/all-publications-2026-10.bib`에 보관.
 - Hugo Blox 주간 자동 업그레이드는 수동 실행으로 변경 (Actions 탭 → Upgrade HugoBlox → Run workflow).
