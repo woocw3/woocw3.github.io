@@ -1,4 +1,5 @@
 ---
+private: true  # noindex: theme page, not a useful search result
 title: 'Experience'
 date: 2023-10-24
 type: landing
